@@ -4,7 +4,7 @@ module PivotalTracker
     class NoToken < StandardError; end
 
     class << self
-      attr_writer :use_ssl, :token
+      attr_writer :use_ssl, :token, :endpoint
 
       def use_ssl
         @use_ssl || false
@@ -32,6 +32,10 @@ module PivotalTracker
         @connections = nil
       end
 
+      def endpoint
+        @endpoint ||= "#{protocol}://www.pivotaltracker.com/services/v3"
+      end
+
       protected
 
         def protocol
@@ -47,7 +51,7 @@ module PivotalTracker
         end
 
         def new_connection
-          @connections[@token] = RestClient::Resource.new("#{protocol}://www.pivotaltracker.com/services/v3", :headers => {'X-TrackerToken' => @token, 'Content-Type' => 'application/xml'})
+          @connections[@token] = RestClient::Resource.new(endpoint, :headers => {'X-TrackerToken' => @token, 'Content-Type' => 'application/xml'})
         end
 
         def protocol_changed?
