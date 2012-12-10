@@ -57,6 +57,7 @@ module PivotalTracker
         end
 
         def cached_connection
+          puts @connections.inspect
           @connections[@token]
         end
 

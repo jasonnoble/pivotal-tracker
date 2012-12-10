@@ -3,9 +3,13 @@ require 'spec_helper'
 describe PivotalTracker::Attachment do
 
   before do
-    PivotalTracker::Client.token = TOKEN
-    @project = PivotalTracker::Project.find(102622)
-    @story = @project.stories.find(4460598)
+    @project = PivotalTracker::Project.all.detect{|project| project.name == 'Pivotal Tracker API Gem'}
+    @story = @project.stories.all.first
+    puts "Uploading attachment to story #{@story.id} on project #{@project.id}"
+    if @story.attachments.count == 0
+      @story.upload_attachment('tmp/attachment1.txt')
+    end
+    @story = @project.stories.all.first
   end
 
   context "always" do
@@ -47,14 +51,11 @@ describe PivotalTracker::Attachment do
   context "uploading" do
 
     before do
-      @target_story = @project.stories.find(4473735)
-      @orig_net_lock = FakeWeb.allow_net_connect?
+      @target_story = @project.stories.all.first
     end
 
     it "should return an attachment object with a pending status" do
-      FakeWeb.allow_net_connect = true
       resource = @target_story.upload_attachment(File.dirname(__FILE__) + '/../../LICENSE')
-      FakeWeb.allow_net_connect = @orig_net_lock
       resource.should be_a(PivotalTracker::Attachment)
       resource.status.should == 'Pending'
     end

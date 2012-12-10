@@ -2,8 +2,8 @@ require 'spec_helper'
 
 describe PivotalTracker::Note do
   before do
-    @project = PivotalTracker::Project.find(102622)
-    @story = @project.stories.find(4460038)
+    @project = PivotalTracker::Project.all.detect{|project| project.name == 'Pivotal Tracker API Gem'}
+    @story = @project.stories.all.first
   end
 
   context ".all" do

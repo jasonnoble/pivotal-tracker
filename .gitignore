@@ -8,3 +8,4 @@ vendor
 .idea
 request_test.rb
 stale_fish-tmp.yml
+tmp/rspec_guard_result

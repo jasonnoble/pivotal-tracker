@@ -2,7 +2,8 @@ require 'spec_helper'
 
 describe PivotalTracker::Project do
   before do
-    @project = PivotalTracker::Project.find(102622)
+    @project = PivotalTracker::Project.all.detect{|project| project.name == 'Pivotal Tracker API Gem'}
+    @membership_id = @project.memberships.all.first.id
   end
 
   context ".all" do
@@ -14,7 +15,7 @@ describe PivotalTracker::Project do
 
   context ".find" do
     it "should return the given membership" do
-      @project.memberships.find(331832).should be_a(PivotalTracker::Membership)
+      @project.memberships.find(@membership_id).should be_a(PivotalTracker::Membership)
     end
   end
 end

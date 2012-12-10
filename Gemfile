@@ -14,4 +14,13 @@ group :test do
   gem 'jeweler'
   gem 'stale_fish', '~> 1.3.2'
   gem 'autotest'
+  gem 'vcr'
+  gem 'fakeweb'
+end
+
+group :development do
+  gem 'debugger'
+  gem 'guard-rspec'
+  gem 'rb-fsevent'
+  gem 'growl'
 end

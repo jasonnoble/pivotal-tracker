@@ -4,7 +4,7 @@ module PivotalTracker
 
     class << self
       def all
-        @found = parse(Client.connection['/projects'].get)
+        @found ||= parse(Client.connection['/projects'].get)
       end
 
       def find(id)

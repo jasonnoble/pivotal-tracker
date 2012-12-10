@@ -2,8 +2,7 @@ require 'spec_helper'
 
 describe PivotalTracker::Iteration do
   before do
-    PivotalTracker::Client.token = TOKEN
-    @project = PivotalTracker::Project.find(PROJECT_ID)
+    @project = PivotalTracker::Project.all.detect{|project| project.name == 'Pivotal Tracker API Gem'}
   end
 
   describe ".all" do
@@ -34,6 +33,7 @@ describe PivotalTracker::Iteration do
 
     it "should return an array of Iterations for the given Project" do
       @iterations.should be_a(Array)
+      puts @iterations.inspect
       @iterations.first.should be_a(PivotalTracker::Iteration)
     end
   end

@@ -9,38 +9,29 @@ require 'pivotal-tracker'
 require 'rspec'
 require 'rspec/autorun'
 
-PROJECT_ID = ENV['PROJECT_ID'] || 102622
-TOKEN = '8358666c5a593a3c82cda728c8a62b63'
+RestClient.proxy = "http://localhost:8888/"
 
-PivotalTracker::Client.token = TOKEN
-
-# tm: hack StaleFish to prevent it from accessing real API which slows down the test.
-#   Fixtures should be upated manually.
-module StaleFish
-  class Fixture
-    def is_stale?
-      false
-    end
-  end
+VCR.configure do |c|
+  c.allow_http_connections_when_no_cassette = true
+  c.cassette_library_dir = 'spec/vcr_cassettes'
+  c.default_cassette_options = { :serialize_with  => :json }
+  c.hook_into :fakeweb
 end
 
-# Requires supporting files with custom matchers and macros, etc,
-# in ./support/ and its subdirectories.
-Dir[File.expand_path(File.join(File.dirname(__FILE__),'support','**','*.rb'))].each {|f| require f}
-
-
 RSpec.configure do |config|
-  # Give StaleFish temporary file which is ignored by git
-  org_stale_fish_config = File.join(File.dirname(__FILE__), 'fixtures', 'stale_fish.yml')
-  tmp_stale_fish_config = File.join(File.dirname(__FILE__), 'fixtures', 'stale_fish-tmp.yml')
-  FileUtils.copy_file org_stale_fish_config, tmp_stale_fish_config, :remove_destination => true
-  StaleFish.setup(tmp_stale_fish_config)
-
+  config.fail_fast = true
   config.before :suite do
-    StaleFish.update_stale
-  end
+    PivotalTracker::Client.token = '49cdf1ec87cfe1854cd519c7a828e00a'
 
-  config.before :each do
-    PivotalTracker::Client.clear_connections
+    # Check to see if the project already exists
+    #VCR.use_cassette('rspec_setup') do
+    #  project = PivotalTracker::Project.all.detect{|p| p.name == 'Pivotal Tracker API Gem'}
+    #
+    #  # If it didn't exist, create it
+    #  project ||= PivotalTracker::Project.new(:name => 'Pivotal Tracker API Gem').create
+    #
+    #  # Need some activities and stories setup
+    #  project.stories.create(:name => 'My Story', :story_type => 'feature')
+    #end
   end
 end

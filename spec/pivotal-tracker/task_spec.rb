@@ -1,21 +1,26 @@
 require 'spec_helper'
 
 describe PivotalTracker::Task do
-  before do
-    @project = PivotalTracker::Project.find(102622)
-    @story = @project.stories.find(4459994)
+  before(:each) do
+    @project = PivotalTracker::Project.all.first
+    @project.stories.create(:name => 'My Story', :story_type => 'feature')
+    @story = @project.stories.all.last
+    @task = @story.tasks.all.first
+    @task ||= @story.tasks.create(:description => 'Some Task')
   end
 
   context ".all" do
     it "should return an array of tasks" do
       @story.tasks.all.should be_a(Array)
-      @story.tasks.all.first.should be_a(PivotalTracker::Task)
+      @story.tasks.all.each do |task|
+        task.should be_a(PivotalTracker::Task)
+      end
     end
   end
 
   context ".find" do
     it "should return a given task" do
-      @story.tasks.find(468113).should be_a(PivotalTracker::Task)
+      @story.tasks.find(@task.id).should be_a(PivotalTracker::Task)
     end
   end
 
@@ -27,7 +32,7 @@ describe PivotalTracker::Task do
 
   context '.update' do
     it "should return the updated task" do
-      @story.tasks.find(468113).update(:description => 'Test task').description.should == 'Test task'
+      @story.tasks.find(@task.id).update(:description => 'Test task').description.should == 'Test task'
     end
   end
 end
