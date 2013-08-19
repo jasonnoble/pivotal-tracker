@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://<PIVOTAL_USER_NAME>:<PIVOTAL_PASSWORD>@www.pivotaltracker.com/services/v5/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1013'
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.14
+      X-Runtime:
+      - '487'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Etag:
+      - '"7820642b56b84675c4ab84d7b1b2dbcf"'
+      Server:
+      - nginx/1.2.2 + Phusion Passenger 3.0.14 (mod_rails/mod_rack)
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "username": "<PIVOTAL_USER_NAME>",
+          "projects": [
+            {
+              "project_name": "My Sample Project",
+              "role": "owner",
+              "kind": "membership_summary",
+              "id": 1655853,
+              "project_id": 481145,
+              "last_viewed_at": "2013-08-06T00:00:06Z"
+            },
+            {
+              "project_name": "My Sample Project 2",
+              "role": "owner",
+              "kind": "membership_summary",
+              "id": 3355310,
+              "project_id": 885256,
+              "last_viewed_at": "2013-08-06T00:02:09Z"
+            },
+            {
+              "project_name": "My Sample Project 3",
+              "role": "owner",
+              "kind": "membership_summary",
+              "id": 3355312,
+              "project_id": 885258,
+              "last_viewed_at": "2013-08-06T00:02:24Z"
+            }
+          ],
+          "name": "Jason Noble",
+          "email": "<PIVOTAL_EMAIL_ADDRESS>",
+          "initials": "JN",
+          "kind": "me",
+          "time_zone": {
+            "offset": "-07:00",
+            "kind": "time_zone",
+            "olson_name": "America/Los_Angeles"
+          },
+          "has_google_identity": false,
+          "autosave": false,
+          "id": 30310,
+          "api_token": "<PIVOTAL_API_TOKEN>"
+        }
+    http_version: 
+  recorded_at: Tue, 06 Aug 2013 00:02:40 GMT
+recorded_with: VCR 2.5.0

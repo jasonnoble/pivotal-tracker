@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://<PIVOTAL_USER_NAME>:<PIVOTAL_PASSWORD>@www.pivotaltracker.com/services/v5/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Trackertoken:
+      - <PIVOTAL_API_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1013'
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.14
+      Etag:
+      - '"79ea71d859d97b484db548ff04dfa35d"'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      X-Runtime:
+      - '110'
+      Server:
+      - nginx/1.2.2 + Phusion Passenger 3.0.14 (mod_rails/mod_rack)
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "kind": "me",
+          "initials": "JN",
+          "username": "<PIVOTAL_USER_NAME>",
+          "api_token": "<PIVOTAL_API_TOKEN>",
+          "name": "Jason Noble",
+          "time_zone": {
+            "kind": "time_zone",
+            "olson_name": "America/Los_Angeles",
+            "offset": "-07:00"
+          },
+          "autosave": false,
+          "id": 30310,
+          "has_google_identity": false,
+          "projects": [
+            {
+              "role": "owner",
+              "kind": "membership_summary",
+              "project_name": "My Sample Project",
+              "project_id": 481145,
+              "id": 1655853,
+              "last_viewed_at": "2013-08-06T00:02:41Z"
+            },
+            {
+              "role": "owner",
+              "kind": "membership_summary",
+              "project_name": "My Sample Project 2",
+              "project_id": 885256,
+              "id": 3355310,
+              "last_viewed_at": "2013-08-06T00:02:09Z"
+            },
+            {
+              "role": "owner",
+              "kind": "membership_summary",
+              "project_name": "My Sample Project 3",
+              "project_id": 885258,
+              "id": 3355312,
+              "last_viewed_at": "2013-08-06T00:02:24Z"
+            }
+          ],
+          "email": "<PIVOTAL_EMAIL_ADDRESS>"
+        }
+    http_version: 
+  recorded_at: Tue, 06 Aug 2013 00:02:43 GMT
+recorded_with: VCR 2.5.0
