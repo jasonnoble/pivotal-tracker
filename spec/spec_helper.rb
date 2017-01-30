@@ -34,6 +34,9 @@ VCR.configure do |c|
   c.filter_sensitive_data('<PIVOTAL_PASSWORD>') do |interaction|
     ENV['PIVOTAL_USER_PASSWORD']
   end
+  c.filter_sensitive_data('<PROJECT_ID>') do |interaction|
+    ENV['PROJECT_ID']
+  end
 end
 
 def capture_output
