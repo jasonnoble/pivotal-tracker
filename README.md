@@ -1,5 +1,7 @@
 ## pivotal-tracker.rb - the original ruby gem
 
+This gem provides a wrapper around Version 5 of the Pivotal Tracker API
+
 ## Features
 
 * Compatible with Pivotal Tracker API version 5
