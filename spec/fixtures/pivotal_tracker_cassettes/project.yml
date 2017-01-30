@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://<PIVOTAL_USER_NAME>:<PIVOTAL_PASSWORD>@www.pivotaltracker.com/services/v5/projects
+    uri: https://www.pivotaltracker.com/services/v5/projects
     body:
       encoding: US-ASCII
       string: ''
@@ -13,1619 +13,6 @@ http_interactions:
     status:
       code: 200
       message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '2956'
-      Status:
-      - '200'
-      X-Powered-By:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.14
-      Etag:
-      - '"31f58bba8d28a9f2141d6f1ac626fb7c"'
-      X-Runtime:
-      - '49'
-      Cache-Control:
-      - private, max-age=0, must-revalidate
-      Server:
-      - nginx/1.2.2 + Phusion Passenger 3.0.14 (mod_rails/mod_rack)
-    body:
-      encoding: UTF-8
-      string: |-
-        [
-          {
-            "start_time": "2013-07-22T06:00:00Z",
-            "has_google_domain": false,
-            "point_scale": "0,1,2,3",
-            "iteration_length": 1,
-            "current_iteration_number": 3,
-            "time_zone": {
-              "olson_name": "America/Denver",
-              "offset": "-06:00",
-              "kind": "time_zone"
-            },
-            "week_start_day": "Monday",
-            "updated_at": "2013-08-06T00:02:20Z",
-            "initial_velocity": 10,
-            "public": false,
-            "enable_tasks": true,
-            "enable_planned_mode": false,
-            "enable_incoming_emails": true,
-            "version": 1,
-            "name": "My Sample Project 3",
-            "id": 885258,
-            "created_at": "2013-08-06T00:02:20Z",
-            "velocity_averaged_over": 3,
-            "atom_enabled": false,
-            "profile_content": "This is a demo project, created by Tracker, with example stories for a simple shopping web site.",
-            "bugs_and_chores_are_estimatable": false,
-            "kind": "project",
-            "enable_following": true,
-            "number_of_done_iterations_to_show": 12,
-            "point_scale_is_custom": false
-          },
-          {
-            "start_time": "2013-07-22T06:00:00Z",
-            "has_google_domain": false,
-            "point_scale": "0,1,2,3",
-            "iteration_length": 1,
-            "current_iteration_number": 3,
-            "time_zone": {
-              "olson_name": "America/Denver",
-              "offset": "-06:00",
-              "kind": "time_zone"
-            },
-            "week_start_day": "Monday",
-            "updated_at": "2013-08-06T00:02:04Z",
-            "initial_velocity": 10,
-            "public": false,
-            "enable_tasks": true,
-            "enable_planned_mode": false,
-            "enable_incoming_emails": true,
-            "version": 1,
-            "name": "My Sample Project 2",
-            "id": 885256,
-            "created_at": "2013-08-06T00:02:04Z",
-            "velocity_averaged_over": 3,
-            "atom_enabled": false,
-            "profile_content": "This is a demo project, created by Tracker, with example stories for a simple shopping web site.",
-            "bugs_and_chores_are_estimatable": false,
-            "kind": "project",
-            "enable_following": true,
-            "number_of_done_iterations_to_show": 12,
-            "point_scale_is_custom": false
-          },
-          {
-            "start_time": "2012-01-30T07:00:00Z",
-            "has_google_domain": false,
-            "point_scale": "0,1,2,3",
-            "iteration_length": 1,
-            "current_iteration_number": 80,
-            "time_zone": {
-              "olson_name": "America/Denver",
-              "offset": "-06:00",
-              "kind": "time_zone"
-            },
-            "week_start_day": "Monday",
-            "updated_at": "2013-04-13T10:03:37Z",
-            "initial_velocity": 10,
-            "public": false,
-            "enable_tasks": true,
-            "enable_planned_mode": false,
-            "enable_incoming_emails": true,
-            "version": 7,
-            "name": "My Sample Project",
-            "id": 481145,
-            "created_at": "2012-02-17T07:37:43Z",
-            "velocity_averaged_over": 3,
-            "atom_enabled": false,
-            "profile_content": "This is a demo project, created by Tracker, with example stories for a simple shopping web site.",
-            "bugs_and_chores_are_estimatable": false,
-            "kind": "project",
-            "enable_following": true,
-            "number_of_done_iterations_to_show": 12,
-            "point_scale_is_custom": false
-          }
-        ]
-    http_version: 
-  recorded_at: Tue, 06 Aug 2013 00:02:40 GMT
-- request:
-    method: get
-    uri: https://<PIVOTAL_USER_NAME>:<PIVOTAL_PASSWORD>@www.pivotaltracker.com/services/v5/projects/481145
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      X-Trackertoken:
-      - "<PIVOTAL_API_TOKEN>"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '920'
-      Status:
-      - '200'
-      X-Powered-By:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.14
-      Etag:
-      - '"cdd324e634ece82220d6486471677431"'
-      X-Tracker-Project-Version:
-      - '7'
-      Cache-Control:
-      - private, max-age=0, must-revalidate
-      X-Runtime:
-      - '54'
-      Server:
-      - nginx/1.2.2 + Phusion Passenger 3.0.14 (mod_rails/mod_rack)
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "start_time": "2012-01-30T07:00:00Z",
-          "public": false,
-          "initial_velocity": 10,
-          "number_of_done_iterations_to_show": 12,
-          "current_iteration_number": 80,
-          "enable_incoming_emails": true,
-          "week_start_day": "Monday",
-          "version": 7,
-          "kind": "project",
-          "enable_planned_mode": false,
-          "atom_enabled": false,
-          "point_scale_is_custom": false,
-          "point_scale": "0,1,2,3",
-          "enable_following": true,
-          "enable_tasks": true,
-          "iteration_length": 1,
-          "created_at": "2012-02-17T07:37:43Z",
-          "profile_content": "This is a demo project, created by Tracker, with example stories for a simple shopping web site.",
-          "has_google_domain": false,
-          "velocity_averaged_over": 3,
-          "name": "My Sample Project",
-          "updated_at": "2013-04-13T10:03:37Z",
-          "time_zone": {
-            "kind": "time_zone",
-            "offset": "-06:00",
-            "olson_name": "America/Denver"
-          },
-          "bugs_and_chores_are_estimatable": false,
-          "id": 481145
-        }
-    http_version: 
-  recorded_at: Tue, 06 Aug 2013 00:02:41 GMT
-- request:
-    method: get
-    uri: https://<PIVOTAL_USER_NAME>:<PIVOTAL_PASSWORD>@www.pivotaltracker.com/services/v5/projects/123456789123456789
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      X-Trackertoken:
-      - "<PIVOTAL_API_TOKEN>"
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '283'
-      Status:
-      - '404'
-      X-Powered-By:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.14
-      Cache-Control:
-      - no-cache
-      Server:
-      - nginx/1.2.2 + Phusion Passenger 3.0.14 (mod_rails/mod_rack)
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "code": "unfound_resource",
-          "error": "The object you tried to access could not be found.  It may have been removed by another user, you may be using the ID of another object type, or you may be trying to access a sub-resource at the wrong point in a tree.",
-          "kind": "error"
-        }
-    http_version: 
-  recorded_at: Tue, 06 Aug 2013 00:02:41 GMT
-- request:
-    method: get
-    uri: https://<PIVOTAL_USER_NAME>:<PIVOTAL_PASSWORD>@www.pivotaltracker.com/services/v5/projects/481145/stories
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      X-Trackertoken:
-      - "<PIVOTAL_API_TOKEN>"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '35409'
-      Status:
-      - '200'
-      X-Powered-By:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.14
-      Etag:
-      - '"ff1ff40d8b06a067535c509f4b7372d8"'
-      Cache-Control:
-      - private, max-age=0, must-revalidate
-      X-Tracker-Pagination-Offset:
-      - '0'
-      X-Tracker-Project-Version:
-      - '7'
-      X-Tracker-Pagination-Returned:
-      - '59'
-      X-Tracker-Pagination-Total:
-      - '59'
-      X-Runtime:
-      - '660'
-      X-Tracker-Pagination-Limit:
-      - '300'
-      Server:
-      - nginx/1.2.2 + Phusion Passenger 3.0.14 (mod_rails/mod_rack)
-    body:
-      encoding: UTF-8
-      string: |-
-        [
-          {
-            "description": "We need 2 machines set up",
-            "current_state": "accepted",
-            "name": "Setup development environment",
-            "updated_at": "2012-02-17T07:37:43Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100645",
-            "project_id": 481145,
-            "created_at": "2012-01-30T00:00:00Z",
-            "story_type": "chore",
-            "labels": [
-
-            ],
-            "requested_by_id": 30310,
-            "accepted_at": "2012-01-31T00:00:00Z",
-            "id": 25100645
-          },
-          {
-            "description": "Should be accessible from outside the network, with basic auth",
-            "current_state": "accepted",
-            "name": "Setup demo server",
-            "updated_at": "2012-02-17T07:37:43Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100647",
-            "project_id": 481145,
-            "created_at": "2012-01-30T00:00:00Z",
-            "story_type": "chore",
-            "labels": [
-              {
-                "name": "deployment",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587221
-              }
-            ],
-            "requested_by_id": 30310,
-            "accepted_at": "2012-01-31T00:00:00Z",
-            "id": 25100647
-          },
-          {
-            "description": "Admin should be a special user type. We can create the first admin user directly in the DB, but let's encrypt the password.",
-            "current_state": "accepted",
-            "name": "Admin should be able to login",
-            "estimate": 2,
-            "updated_at": "2012-02-17T07:37:43Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100649",
-            "project_id": 481145,
-            "created_at": "2012-01-30T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "admin",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587223
-              }
-            ],
-            "requested_by_id": 30310,
-            "accepted_at": "2012-01-31T00:00:00Z",
-            "id": 25100649
-          },
-          {
-            "description": "Product information includes title, description, price, SKU.",
-            "current_state": "accepted",
-            "name": "Admin should be able to create new product",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:43Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100651",
-            "project_id": 481145,
-            "created_at": "2012-01-30T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "admin",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587223
-              }
-            ],
-            "requested_by_id": 30310,
-            "accepted_at": "2012-01-31T00:00:00Z",
-            "id": 25100651
-          },
-          {
-            "current_state": "accepted",
-            "name": "Admin should be able to upload product photo",
-            "estimate": 2,
-            "updated_at": "2012-02-17T07:37:43Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100653",
-            "project_id": 481145,
-            "created_at": "2012-01-30T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "admin",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587223
-              }
-            ],
-            "requested_by_id": 30310,
-            "accepted_at": "2012-01-31T00:00:00Z",
-            "id": 25100653
-          },
-          {
-            "current_state": "accepted",
-            "name": "Admin should be able to upload multiple product photos and mark one as the primary",
-            "estimate": 3,
-            "updated_at": "2012-02-17T07:37:43Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100655",
-            "project_id": 481145,
-            "created_at": "2012-01-30T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "admin",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587223
-              }
-            ],
-            "requested_by_id": 30310,
-            "accepted_at": "2012-02-07T00:00:00Z",
-            "id": 25100655
-          },
-          {
-            "current_state": "accepted",
-            "name": "Shopper should see list of products, with primary photo as thumbnail",
-            "estimate": 2,
-            "updated_at": "2012-02-17T07:37:43Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100657",
-            "project_id": 481145,
-            "created_at": "2012-01-30T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "shopping",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587225
-              }
-            ],
-            "requested_by_id": 30310,
-            "accepted_at": "2012-02-07T00:00:00Z",
-            "id": 25100657
-          },
-          {
-            "current_state": "accepted",
-            "name": "Product browsing should be paginated, with 10 products per page",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:43Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100659",
-            "project_id": 481145,
-            "created_at": "2012-01-30T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "shopping",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587225
-              }
-            ],
-            "requested_by_id": 30310,
-            "accepted_at": "2012-02-07T00:00:00Z",
-            "id": 25100659
-          },
-          {
-            "current_state": "accepted",
-            "name": "Make product browsing pagination AJAXy",
-            "estimate": 2,
-            "updated_at": "2012-02-17T07:37:43Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100661",
-            "project_id": 481145,
-            "created_at": "2012-01-30T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "shopping",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587225
-              },
-              {
-                "name": "usability",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587227
-              }
-            ],
-            "requested_by_id": 30310,
-            "accepted_at": "2012-02-07T00:00:00Z",
-            "id": 25100661
-          },
-          {
-            "current_state": "accepted",
-            "name": "Admin should be able to import multiple new products from CSV file",
-            "estimate": 3,
-            "updated_at": "2012-02-17T07:37:43Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100663",
-            "project_id": 481145,
-            "created_at": "2012-01-30T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "admin",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587223
-              }
-            ],
-            "requested_by_id": 30310,
-            "accepted_at": "2012-02-07T00:00:00Z",
-            "id": 25100663
-          },
-          {
-            "current_state": "accepted",
-            "name": "Shopper should be able to click on a product, and see all product details, including photos",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:43Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100665",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "shopping",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587225
-              }
-            ],
-            "requested_by_id": 30310,
-            "accepted_at": "2012-02-17T00:00:00Z",
-            "id": 25100665
-          },
-          {
-            "current_state": "accepted",
-            "name": "Shopper should be able to add product to shopping cart",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:43Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100667",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "cart",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587229
-              },
-              {
-                "name": "shopping",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587225
-              }
-            ],
-            "requested_by_id": 30310,
-            "accepted_at": "2012-02-17T07:37:43Z",
-            "id": 25100667
-          },
-          {
-            "description": "Cart icon in top right corner, with a number indicating how many items in cart",
-            "current_state": "accepted",
-            "name": "Shopper should be able to view contents of shopping cart",
-            "estimate": 2,
-            "updated_at": "2012-12-10T01:22:59Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100669",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "cart",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587229
-              },
-              {
-                "name": "shopping",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587225
-              }
-            ],
-            "requested_by_id": 30310,
-            "accepted_at": "2012-12-02T19:00:00Z",
-            "id": 25100669
-          },
-          {
-            "current_state": "delivered",
-            "name": "Shopper should be able to remove product from shopping cart",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:43Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100671",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "cart",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587229
-              },
-              {
-                "name": "shopping",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587225
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100671
-          },
-          {
-            "current_state": "finished",
-            "name": "Cart manipulation should be AJAXy",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100673",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "cart",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587229
-              },
-              {
-                "name": "shopping",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587225
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100673
-          },
-          {
-            "current_state": "started",
-            "name": "Some product photos not scaled properly when browsing products",
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100675",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "bug",
-            "labels": [
-              {
-                "name": "shopping",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587225
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100675
-          },
-          {
-            "description": "Prompt for email address and personalized message, send email with product details and message",
-            "current_state": "unstarted",
-            "name": "Shopper should be able to recommend a product to a friend",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100677",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "shopping",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587225
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100677
-          },
-          {
-            "current_state": "unstarted",
-            "name": "configure solr for full text searching",
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100679",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "chore",
-            "labels": [
-              {
-                "name": "search",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587231
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100679
-          },
-          {
-            "description": "One search field, search should look through product name, description, and SKU",
-            "current_state": "unstarted",
-            "name": "Shopper should be able to search for product",
-            "estimate": 3,
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100681",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "search",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587231
-              },
-              {
-                "name": "shopping",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587225
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100681
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Initial demo to investors",
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100683",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "release",
-            "labels": [
-
-            ],
-            "requested_by_id": 30310,
-            "id": 25100683
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Shopper should be able to enter credit card information and shipping address",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100685",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "checkout",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587233
-              },
-              {
-                "name": "shopping",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587225
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100685
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Integrate with payment gateway",
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100687",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "chore",
-            "labels": [
-              {
-                "name": "checkout",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587233
-              },
-              {
-                "name": "shopping",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587225
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100687
-          },
-          {
-            "current_state": "unstarted",
-            "name": "When shopper submits order, authorize total product amount from payment gateway",
-            "estimate": 3,
-            "updated_at": "2012-08-24T14:06:06Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100689",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "checkout",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587233
-              },
-              {
-                "name": "needs discussion",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587235
-              },
-              {
-                "name": "shopping",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587225
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100689
-          },
-          {
-            "current_state": "unstarted",
-            "name": "If system fails to authorize payment amount, display error message to shopper",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100691",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "checkout",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587233
-              },
-              {
-                "name": "shopping",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587225
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100691
-          },
-          {
-            "current_state": "unstarted",
-            "name": "If authorization is successful, show order number and confirmation message to shopper",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100693",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "checkout",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587233
-              },
-              {
-                "name": "shopping",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587225
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100693
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Send notification email of order placement to admin",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100695",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "admin",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587223
-              },
-              {
-                "name": "checkout",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587233
-              },
-              {
-                "name": "shopping",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587225
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100695
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Shopper should be able to check status of order by entering name and order number",
-            "estimate": 2,
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100697",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "orders",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587237
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100697
-          },
-          {
-            "description": "When checking status of order, shopper should have the option to ask a question. This should send email to admin.",
-            "current_state": "unstarted",
-            "name": "Shopper should be able to ask question about order",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100699",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "orders",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587237
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100699
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Admin can review all order questions and send responses to shoppers",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100701",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "admin",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587223
-              },
-              {
-                "name": "orders",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587237
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100701
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Set up Engine Yard production environment",
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100703",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "chore",
-            "labels": [
-              {
-                "name": "deployment",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587221
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100703
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Beta launch",
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100705",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "release",
-            "labels": [
-
-            ],
-            "requested_by_id": 30310,
-            "deadline": "2012-03-05T19:00:00Z",
-            "id": 25100705
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Shopper should be able to sign up for an account with email address",
-            "estimate": 2,
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100707",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "signup / signin",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587239
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100707
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Shopper should be able to reset forgotten password",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100709",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "signup / signin",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587239
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100709
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Shopper should be able to log out",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100711",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "signup / signin",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587239
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100711
-          },
-          {
-            "current_state": "unstarted",
-            "name": "When checking out, shopper should have the option to sign in to their account",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:44Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100713",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "signup / signin",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587239
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100713
-          },
-          {
-            "description": "Show orders in last 60 days, with link to show older orders",
-            "current_state": "unstarted",
-            "name": "Signed in shopper should be able to review order history",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100715",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "shopper accounts",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587241
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100715
-          },
-          {
-            "description": "Credit card numbers should be stored encrypted",
-            "current_state": "unstarted",
-            "name": "Signed in shopper should be able to save credit card and address information used in checkout",
-            "estimate": 2,
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100717",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "shopper accounts",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587241
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100717
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Signed in shopper should be able to save product to favorites",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100719",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "shopper accounts",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587241
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100719
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Signed in shopper should be able to review and remove product from favorites",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100721",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "shopper accounts",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587241
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100721
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Provide feedback to designer about look/feel of site",
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100723",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "chore",
-            "labels": [
-              {
-                "name": "design",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587243
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100723
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Apply styling to all shopper facing parts of the site, based on assets from designer",
-            "estimate": 3,
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100725",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "design",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587243
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100725
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Signed in shopper should be able to post product reviews",
-            "estimate": 2,
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100727",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "user generated content",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587245
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100727
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Signed in shopper should be able to rate product, by choosing 1-5 stars",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100729",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "user generated content",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587245
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100729
-          },
-          {
-            "current_state": "unstarted",
-            "name": "When shopper is browsing products, show average product rating and number of reviews next to each product",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100731",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "user generated content",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587245
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100731
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Shopper should be able to read reviews for a product",
-            "estimate": 1,
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100733",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "user generated content",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587245
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100733
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Admin should be able to mark a product as featured",
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100735",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "admin",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587223
-              },
-              {
-                "name": "featured products",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587247
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100735
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Featured products should appear on the site landing page",
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100737",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "featured products",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587247
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100737
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Admin should be able to create and edit blog articles",
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100739",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "admin",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587223
-              },
-              {
-                "name": "blog",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587249
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100739
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Admin should be able to save blog articles in draft mode",
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100741",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "admin",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587223
-              },
-              {
-                "name": "blog",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587249
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100741
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Published blog articles should appear on the site",
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100743",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "blog",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587249
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100743
-          },
-          {
-            "current_state": "unstarted",
-            "name": "People should be able to subscribe to blog via RSS and Atom",
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100745",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "blog",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587249
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100745
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Admin should be able to view monthly sales report",
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100747",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "admin",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587223
-              },
-              {
-                "name": "reporting",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587251
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100747
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Admin should be able to export orders as CSV file, based on date range and order status",
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100749",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "admin",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587223
-              },
-              {
-                "name": "reporting",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587251
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100749
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Request higher number of production slices, for scaling",
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100751",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "chore",
-            "labels": [
-              {
-                "name": "deployment",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587221
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100751
-          },
-          {
-            "current_state": "unstarted",
-            "name": "Full production launch",
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100753",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "release",
-            "labels": [
-
-            ],
-            "requested_by_id": 30310,
-            "id": 25100753
-          },
-          {
-            "current_state": "unscheduled",
-            "name": "Product browsing pagination not working in IE6",
-            "updated_at": "2012-02-17T07:37:45Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100755",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "bug",
-            "labels": [
-              {
-                "name": "ie6",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587253
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100755
-          },
-          {
-            "current_state": "unscheduled",
-            "name": "Integrate with automated order fullfillment system",
-            "updated_at": "2012-02-17T07:37:46Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100757",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-
-            ],
-            "requested_by_id": 30310,
-            "id": 25100757
-          },
-          {
-            "current_state": "unscheduled",
-            "name": "native iPhone app to allow product browsing and checkout",
-            "updated_at": "2012-02-17T07:37:46Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100759",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-              {
-                "name": "epic",
-                "kind": "label",
-                "project_id": 481145,
-                "id": 2587255
-              }
-            ],
-            "requested_by_id": 30310,
-            "id": 25100759
-          },
-          {
-            "current_state": "unscheduled",
-            "name": "Facebook app, allowing users to share favorite products",
-            "updated_at": "2012-02-17T07:37:46Z",
-            "kind": "story",
-            "url": "http://www.pivotaltracker.com/story/show/25100761",
-            "project_id": 481145,
-            "created_at": "2012-02-06T00:00:00Z",
-            "story_type": "feature",
-            "labels": [
-
-            ],
-            "requested_by_id": 30310,
-            "id": 25100761
-          }
-        ]
-    http_version: 
-  recorded_at: Tue, 06 Aug 2013 00:02:43 GMT
-- request:
-    method: get
-    uri: https://www.pivotaltracker.com/services/v5/projects/481145
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      X-Trackertoken:
-      - "<PIVOTAL_API_TOKEN>"
-      Authorization:
-      - Basic cGl2b3RhbHRyYWNrZXIxMjE6b1BiVlE5VWYxTA==
-  response:
-    status:
-      code: 403
-      message: Forbidden
     headers:
       Access-Control-Allow-Credentials:
       - 'false'
@@ -1636,15 +23,17 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Cache-Control:
-      - no-cache, private
+      - max-age=0, private, must-revalidate
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 30 Jan 2017 20:38:24 GMT
+      - Mon, 30 Jan 2017 22:00:51 GMT
+      Etag:
+      - '"73bc1290683f95ac15689b16517f07fd"'
       Server:
       - nginx + Phusion Passenger
       Status:
-      - 403 Forbidden
+      - 200 OK
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       X-Powered-By:
@@ -1652,29 +41,146 @@ http_interactions:
       X-Rack-Cache:
       - miss
       X-Request-Id:
-      - a9bf0c5a821d1dfd9ea859871b6a3ad8
+      - 6a30113ca9541ca64edb8901c730feca
       X-Runtime:
-      - '0.038361'
+      - '0.030368'
       X-Tracker-Client-Pinger-Interval:
       - '20'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       X-Vcap-Request-Id:
-      - 9fdf8f08-a4ba-4b3a-6b10-ed0338b768e9
+      - f2d8e52f-baec-477c-4a46-95f39c27fccd
       Content-Length:
-      - '443'
+      - '729'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"code":"unauthorized_operation","kind":"error","error":"Authorization
-        failure.","general_problem":"You aren''t authorized to access the requested
-        resource.","possible_fix":"Your project permissions are determined on the
-        Project Membership page. If you are receiving this error you may be trying
-        to access the wrong project, or the project API access is disabled, or someone
-        listed as the project''s Owner needs to change your membership type."}'
+      string: '[{"id":1962995,"kind":"project","name":"Gem RSpec Project","version":5,"iteration_length":1,"week_start_day":"Monday","point_scale":"0,1,2,3","point_scale_is_custom":false,"bugs_and_chores_are_estimatable":false,"automatic_planning":true,"enable_tasks":true,"time_zone":{"kind":"time_zone","olson_name":"America/Los_Angeles","offset":"-08:00"},"velocity_averaged_over":3,"number_of_done_iterations_to_show":12,"has_google_domain":false,"enable_incoming_emails":true,"initial_velocity":10,"public":true,"atom_enabled":false,"project_type":"public","start_time":"2017-01-30T08:00:00Z","created_at":"2017-01-30T21:36:49Z","updated_at":"2017-01-30T21:36:49Z","account_id":470491,"current_iteration_number":1,"enable_following":true}]'
     http_version: 
-  recorded_at: Mon, 30 Jan 2017 20:38:24 GMT
+  recorded_at: Mon, 30 Jan 2017 22:00:51 GMT
+- request:
+    method: get
+    uri: https://www.pivotaltracker.com/services/v5/projects/1962995
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 30 Jan 2017 22:00:53 GMT
+      Etag:
+      - '"5e34e9b41c9f56f2e23aa2fb3dfe1f98"'
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 9753210d6cb6623657370398730f9a42
+      X-Runtime:
+      - '0.051728'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Tracker-Project-Version:
+      - '5'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - cba77600-1d1a-45bf-4911-29c6e3435add
+      Content-Length:
+      - '727'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1962995,"kind":"project","name":"Gem RSpec Project","version":5,"iteration_length":1,"week_start_day":"Monday","point_scale":"0,1,2,3","point_scale_is_custom":false,"bugs_and_chores_are_estimatable":false,"automatic_planning":true,"enable_tasks":true,"time_zone":{"kind":"time_zone","olson_name":"America/Los_Angeles","offset":"-08:00"},"velocity_averaged_over":3,"number_of_done_iterations_to_show":12,"has_google_domain":false,"enable_incoming_emails":true,"initial_velocity":10,"public":true,"atom_enabled":false,"project_type":"public","start_time":"2017-01-30T08:00:00Z","created_at":"2017-01-30T21:36:49Z","updated_at":"2017-01-30T21:36:49Z","account_id":470491,"current_iteration_number":1,"enable_following":true}'
+    http_version: 
+  recorded_at: Mon, 30 Jan 2017 22:00:53 GMT
+- request:
+    method: get
+    uri: https://www.pivotaltracker.com/services/v5/projects/1962995
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 30 Jan 2017 22:01:30 GMT
+      Etag:
+      - '"5e34e9b41c9f56f2e23aa2fb3dfe1f98"'
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 7164a646b5b12e5fc7340dcffd6e7526
+      X-Runtime:
+      - '0.224312'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Tracker-Project-Version:
+      - '5'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - 47f5a4c4-ef51-436a-5817-cf62aa418480
+      Content-Length:
+      - '727'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1962995,"kind":"project","name":"Gem RSpec Project","version":5,"iteration_length":1,"week_start_day":"Monday","point_scale":"0,1,2,3","point_scale_is_custom":false,"bugs_and_chores_are_estimatable":false,"automatic_planning":true,"enable_tasks":true,"time_zone":{"kind":"time_zone","olson_name":"America/Los_Angeles","offset":"-08:00"},"velocity_averaged_over":3,"number_of_done_iterations_to_show":12,"has_google_domain":false,"enable_incoming_emails":true,"initial_velocity":10,"public":true,"atom_enabled":false,"project_type":"public","start_time":"2017-01-30T08:00:00Z","created_at":"2017-01-30T21:36:49Z","updated_at":"2017-01-30T21:36:49Z","account_id":470491,"current_iteration_number":1,"enable_following":true}'
+    http_version: 
+  recorded_at: Mon, 30 Jan 2017 22:01:30 GMT
 - request:
     method: get
     uri: https://www.pivotaltracker.com/services/v5/projects/123456789123456789
@@ -1685,7 +191,7 @@ http_interactions:
       X-Trackertoken:
       - "<PIVOTAL_API_TOKEN>"
       Authorization:
-      - Basic cGl2b3RhbHRyYWNrZXIxMjE6b1BiVlE5VWYxTA==
+      - Basic bHVjeWNvbmtsaW46UG9uaWV6NDQ0
   response:
     status:
       code: 404
@@ -1704,7 +210,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 30 Jan 2017 20:38:25 GMT
+      - Mon, 30 Jan 2017 22:02:15 GMT
       Server:
       - nginx + Phusion Passenger
       Status:
@@ -1716,15 +222,15 @@ http_interactions:
       X-Rack-Cache:
       - miss
       X-Request-Id:
-      - eb7174103ed6d6f2ef84301c9242d8e3
+      - 8f95605cf46d16306c5aa1d5a5a36ae8
       X-Runtime:
-      - '0.030486'
+      - '0.019214'
       X-Tracker-Client-Pinger-Interval:
       - '20'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       X-Vcap-Request-Id:
-      - 1a04d180-f1a9-4b29-7e0b-d3d67f951c19
+      - 1054f05f-d83d-469c-63d6-0c7b3ab6368e
       Content-Length:
       - '270'
       Connection:
@@ -1736,10 +242,10 @@ http_interactions:
         may be using the ID of another object type, or you may be trying to access
         a sub-resource at the wrong point in a tree."}'
     http_version: 
-  recorded_at: Mon, 30 Jan 2017 20:38:25 GMT
+  recorded_at: Mon, 30 Jan 2017 22:02:15 GMT
 - request:
     method: get
-    uri: https://www.pivotaltracker.com/services/v5/projects
+    uri: https://www.pivotaltracker.com/services/v5/projects/1962995/stories
     body:
       encoding: US-ASCII
       string: ''
@@ -1747,7 +253,7 @@ http_interactions:
       X-Trackertoken:
       - "<PIVOTAL_API_TOKEN>"
       Authorization:
-      - Basic cGl2b3RhbHRyYWNrZXIxMjE6b1BiVlE5VWYxTA==
+      - Basic bHVjeWNvbmtsaW46UG9uaWV6NDQ0
   response:
     status:
       code: 200
@@ -1766,9 +272,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 30 Jan 2017 20:38:25 GMT
+      - Mon, 30 Jan 2017 22:02:15 GMT
       Etag:
-      - '"2dae09e84bf21aa3489afd7571aad271"'
+      - '"d751713988987e9331980363e24189ce"'
       Server:
       - nginx + Phusion Passenger
       Status:
@@ -1780,23 +286,32 @@ http_interactions:
       X-Rack-Cache:
       - miss
       X-Request-Id:
-      - f03af7b1d7b80e00161d469036c5b8c2
+      - a8ba8666aee84c08c0de7aa47514bc6b
       X-Runtime:
-      - '0.085800'
+      - '0.032845'
       X-Tracker-Client-Pinger-Interval:
       - '20'
+      X-Tracker-Pagination-Limit:
+      - '100'
+      X-Tracker-Pagination-Offset:
+      - '0'
+      X-Tracker-Pagination-Returned:
+      - '0'
+      X-Tracker-Pagination-Total:
+      - '0'
+      X-Tracker-Project-Version:
+      - '5'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       X-Vcap-Request-Id:
-      - ab5385e9-a828-48f9-68e4-961ef09b5039
+      - 13d8fb59-724a-4441-7b73-be300fc98243
       Content-Length:
-      - '1498'
+      - '2'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '[{"id":708251,"kind":"project","name":"Pivotal Tracker API Gem","version":1,"iteration_length":1,"week_start_day":"Monday","point_scale":"0,1,2,3","point_scale_is_custom":false,"bugs_and_chores_are_estimatable":false,"automatic_planning":true,"enable_tasks":true,"time_zone":{"kind":"time_zone","olson_name":"America/Los_Angeles","offset":"-08:00"},"velocity_averaged_over":3,"number_of_done_iterations_to_show":12,"has_google_domain":false,"enable_incoming_emails":true,"initial_velocity":10,"public":false,"atom_enabled":false,"project_type":"private","start_date":"2012-11-05","start_time":"2012-10-08T07:00:00Z","created_at":"2012-12-10T04:43:42Z","updated_at":"2013-07-16T00:24:43Z","account_id":470491,"current_iteration_number":226,"enable_following":true},{"id":708253,"kind":"project","name":"My
-        new tracker project","version":1,"iteration_length":1,"week_start_day":"Monday","point_scale":"0,1,2,3","point_scale_is_custom":false,"bugs_and_chores_are_estimatable":false,"automatic_planning":true,"enable_tasks":true,"time_zone":{"kind":"time_zone","olson_name":"America/Los_Angeles","offset":"-08:00"},"velocity_averaged_over":3,"number_of_done_iterations_to_show":12,"has_google_domain":false,"enable_incoming_emails":true,"initial_velocity":10,"public":false,"atom_enabled":false,"project_type":"private","start_time":"2017-01-30T08:00:00Z","created_at":"2012-12-10T04:45:01Z","updated_at":"2013-07-16T00:24:43Z","account_id":470491,"current_iteration_number":1,"enable_following":true}]'
+      string: "[]"
     http_version: 
-  recorded_at: Mon, 30 Jan 2017 20:38:25 GMT
+  recorded_at: Mon, 30 Jan 2017 22:02:15 GMT
 recorded_with: VCR 3.0.3
