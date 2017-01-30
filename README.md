@@ -52,13 +52,13 @@ PivotalTracker::Client.timeout = 50                                           # 
 # Connect to custom API endpoint
 PivotalTracker::Client.tracker_host = 'www.my-pivotal-tracker.com'
 ```
-The API is based on the following this gist: http://gist.github.com/283120
+The API is based on the following gist: http://gist.github.com/283120
 
 ## Additional Information
 
 * Wiki: https://wiki.github.com/jsmestad/pivotal-tracker
 * Documentation: http://rdoc.info/projects/jsmestad/pivotal-tracker
-* Pivotal API v5 Docs: https://www.pivotaltracker.com/help/api/rest/v5#Account_Memberships
+* Pivotal API v5 Docs: https://www.pivotaltracker.com/help/api/rest/v5
 
 ## Contributors along the way
 
