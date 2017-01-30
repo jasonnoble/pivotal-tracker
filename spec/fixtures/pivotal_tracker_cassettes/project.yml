@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       X-Trackertoken:
-      - <PIVOTAL_API_TOKEN>
+      - "<PIVOTAL_API_TOKEN>"
   response:
     status:
       code: 200
@@ -138,7 +138,7 @@ http_interactions:
       string: ''
     headers:
       X-Trackertoken:
-      - <PIVOTAL_API_TOKEN>
+      - "<PIVOTAL_API_TOKEN>"
   response:
     status:
       code: 200
@@ -206,7 +206,7 @@ http_interactions:
       string: ''
     headers:
       X-Trackertoken:
-      - <PIVOTAL_API_TOKEN>
+      - "<PIVOTAL_API_TOKEN>"
   response:
     status:
       code: 404
@@ -242,7 +242,7 @@ http_interactions:
       string: ''
     headers:
       X-Trackertoken:
-      - <PIVOTAL_API_TOKEN>
+      - "<PIVOTAL_API_TOKEN>"
   response:
     status:
       code: 200
@@ -1611,4 +1611,192 @@ http_interactions:
         ]
     http_version: 
   recorded_at: Tue, 06 Aug 2013 00:02:43 GMT
-recorded_with: VCR 2.5.0
+- request:
+    method: get
+    uri: https://www.pivotaltracker.com/services/v5/projects/481145
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+      Authorization:
+      - Basic cGl2b3RhbHRyYWNrZXIxMjE6b1BiVlE5VWYxTA==
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 30 Jan 2017 20:38:24 GMT
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - a9bf0c5a821d1dfd9ea859871b6a3ad8
+      X-Runtime:
+      - '0.038361'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - 9fdf8f08-a4ba-4b3a-6b10-ed0338b768e9
+      Content-Length:
+      - '443'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"code":"unauthorized_operation","kind":"error","error":"Authorization
+        failure.","general_problem":"You aren''t authorized to access the requested
+        resource.","possible_fix":"Your project permissions are determined on the
+        Project Membership page. If you are receiving this error you may be trying
+        to access the wrong project, or the project API access is disabled, or someone
+        listed as the project''s Owner needs to change your membership type."}'
+    http_version: 
+  recorded_at: Mon, 30 Jan 2017 20:38:24 GMT
+- request:
+    method: get
+    uri: https://www.pivotaltracker.com/services/v5/projects/123456789123456789
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+      Authorization:
+      - Basic cGl2b3RhbHRyYWNrZXIxMjE6b1BiVlE5VWYxTA==
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 30 Jan 2017 20:38:25 GMT
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - eb7174103ed6d6f2ef84301c9242d8e3
+      X-Runtime:
+      - '0.030486'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - 1a04d180-f1a9-4b29-7e0b-d3d67f951c19
+      Content-Length:
+      - '270'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"code":"unfound_resource","kind":"error","error":"The object you tried
+        to access could not be found.  It may have been removed by another user, you
+        may be using the ID of another object type, or you may be trying to access
+        a sub-resource at the wrong point in a tree."}'
+    http_version: 
+  recorded_at: Mon, 30 Jan 2017 20:38:25 GMT
+- request:
+    method: get
+    uri: https://www.pivotaltracker.com/services/v5/projects
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+      Authorization:
+      - Basic cGl2b3RhbHRyYWNrZXIxMjE6b1BiVlE5VWYxTA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 30 Jan 2017 20:38:25 GMT
+      Etag:
+      - '"2dae09e84bf21aa3489afd7571aad271"'
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - f03af7b1d7b80e00161d469036c5b8c2
+      X-Runtime:
+      - '0.085800'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - ab5385e9-a828-48f9-68e4-961ef09b5039
+      Content-Length:
+      - '1498'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":708251,"kind":"project","name":"Pivotal Tracker API Gem","version":1,"iteration_length":1,"week_start_day":"Monday","point_scale":"0,1,2,3","point_scale_is_custom":false,"bugs_and_chores_are_estimatable":false,"automatic_planning":true,"enable_tasks":true,"time_zone":{"kind":"time_zone","olson_name":"America/Los_Angeles","offset":"-08:00"},"velocity_averaged_over":3,"number_of_done_iterations_to_show":12,"has_google_domain":false,"enable_incoming_emails":true,"initial_velocity":10,"public":false,"atom_enabled":false,"project_type":"private","start_date":"2012-11-05","start_time":"2012-10-08T07:00:00Z","created_at":"2012-12-10T04:43:42Z","updated_at":"2013-07-16T00:24:43Z","account_id":470491,"current_iteration_number":226,"enable_following":true},{"id":708253,"kind":"project","name":"My
+        new tracker project","version":1,"iteration_length":1,"week_start_day":"Monday","point_scale":"0,1,2,3","point_scale_is_custom":false,"bugs_and_chores_are_estimatable":false,"automatic_planning":true,"enable_tasks":true,"time_zone":{"kind":"time_zone","olson_name":"America/Los_Angeles","offset":"-08:00"},"velocity_averaged_over":3,"number_of_done_iterations_to_show":12,"has_google_domain":false,"enable_incoming_emails":true,"initial_velocity":10,"public":false,"atom_enabled":false,"project_type":"private","start_time":"2017-01-30T08:00:00Z","created_at":"2012-12-10T04:45:01Z","updated_at":"2013-07-16T00:24:43Z","account_id":470491,"current_iteration_number":1,"enable_following":true}]'
+    http_version: 
+  recorded_at: Mon, 30 Jan 2017 20:38:25 GMT
+recorded_with: VCR 3.0.3

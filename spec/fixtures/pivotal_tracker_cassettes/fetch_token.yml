@@ -75,4 +75,65 @@ http_interactions:
         }
     http_version: 
   recorded_at: Tue, 06 Aug 2013 00:02:40 GMT
-recorded_with: VCR 2.5.0
+- request:
+    method: get
+    uri: https://www.pivotaltracker.com/services/v5/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic cGl2b3RhbHRyYWNrZXIxMjE6b1BiVlE5VWYxTA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 30 Jan 2017 20:38:24 GMT
+      Etag:
+      - '"da3c0416b3e539e99b9d25fb1764ade6"'
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 3b2e3b7e7f4eeec6a8a1148aa842e0f7
+      X-Runtime:
+      - '0.098640'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - 97f3d1ab-1d62-48b1-6971-e2f2948f829b
+      Content-Length:
+      - '836'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"kind":"me","id":861657,"name":"Pivotal Tracker API Gem","initials":"PTAG","username":"<PIVOTAL_USER_NAME>","time_zone":{"kind":"time_zone","olson_name":"America/Los_Angeles","offset":"-08:00"},"api_token":"<PIVOTAL_API_TOKEN>","has_google_identity":false,"projects":[{"kind":"membership_summary","id":2620631,"project_id":708251,"project_name":"Pivotal
+        Tracker API Gem","project_color":"74a4d7","favorite":false,"role":"owner","last_viewed_at":"2017-01-30T18:28:44Z"},{"kind":"membership_summary","id":2620635,"project_id":708253,"project_name":"My
+        new tracker project","project_color":"e46642","favorite":false,"role":"owner","last_viewed_at":"2012-12-10T06:14:35Z"}],"email":"<PIVOTAL_EMAIL_ADDRESS>","receives_in_app_notifications":true,"created_at":"2012-12-10T02:08:07Z","updated_at":"2017-01-30T20:35:45Z"}'
+    http_version: 
+  recorded_at: Mon, 30 Jan 2017 20:38:24 GMT
+recorded_with: VCR 3.0.3

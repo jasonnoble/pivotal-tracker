@@ -5,6 +5,7 @@ gem 'httparty'
 group :development do
   gem 'guard-rspec'
   gem 'ruby_gntp'
+  gem 'dotenv'
 end
 
 group :test do
