@@ -27,7 +27,7 @@ describe PivotalTracker::Project do
   describe "#find" do
     let(:project) { subject.find(project_id) }
     context "with a valid project id" do
-      let(:project_id) { 481145 }
+      let(:project_id) { 1962995 }
 
       it "is a project" do
         expect(project).to be_a(PivotalTracker::Project)
@@ -48,7 +48,7 @@ describe PivotalTracker::Project do
   end
 
   describe ".stories" do
-    let(:project) { subject.find(481145) }
+    let(:project) { subject.find(1962995) }
 
     it "returns an array of stories" do
       stories = project.stories
