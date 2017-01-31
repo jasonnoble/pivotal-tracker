@@ -10,14 +10,23 @@ To get your environment setup for contribution:
 cp .env.example .env
 ```
 
-2. Replace the values of the `.env` variables with your PivotalTracker credentials.
+2. Replace the variables in your `.env` file with your PivotalTracker credentials.
 
 ```
-PIVOTAL_TOKEN_ID='98sf9839848fasd989328asc'
+PIVOTAL_TOKEN_ID='98sf98_YOUR_ACTUAL_TOKEN_328asc'
 PIVOTAL_EMAIL='your@email.here'
 PIVOTAL_USER_NAME='yourusername'
 PIVOTAL_USER_PASSWORD='yourpassword'
 ```
+
+3. Create a Pivotal Tracker project and modify your .env file to have the project ID
+
+```
+PIVOTAL_PROJECT_ID='9_YOUR_PROJECT_ID_2'
+```
+
+4. Make sure your `.env` file is added to your [global gitignore file](https://help.github.com/articles/ignoring-files/#create-a-global-gitignore)
+
 
 ### To find your API token:
    1. Click your username dropdown on the top right of the screen (https://www.pivotaltracker.com/dashboard).
