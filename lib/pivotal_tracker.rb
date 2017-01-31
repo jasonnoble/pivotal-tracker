@@ -14,4 +14,6 @@ class PivotalTracker
   include HTTParty
 
   base_uri 'https://www.pivotaltracker.com/services/v5'
+
+  PermissionDenied = Class.new(Error)
 end

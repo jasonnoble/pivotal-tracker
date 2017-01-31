@@ -24,7 +24,7 @@ class PivotalTracker::Account
         PivotalTracker::AccountMembership.new(membership)
       end
     else
-      puts "Only Admins and Owners can see account memberships"
+      raise(PivotalTracker::PermissionDenied, "Only Admins and Owners can see account memberships")
     end
   end
 end
