@@ -16,7 +16,7 @@ describe PivotalTracker::Account do
   describe "#find" do
     let(:account) { subject.find(account_id) }
     context "with a valid account id" do
-      let(:account_id) { 962753 }
+      let(:account_id) { ENV['PIVOTAL_ACCOUNT_ID'].to_i }
 
       it "is an account" do
         expect(account).to be_a(PivotalTracker::Account)
@@ -37,7 +37,7 @@ describe PivotalTracker::Account do
   end
 
   describe '.memberships' do
-    let(:account) { subject.find(962753) }
+    let(:account) { subject.find(ENV['PIVOTAL_ACCOUNT_ID'].to_i) }
 
     it "returns all memberships" do
       expect(account.memberships).to be_an(Array)
