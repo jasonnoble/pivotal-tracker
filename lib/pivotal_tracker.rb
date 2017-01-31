@@ -7,6 +7,8 @@ end
 require 'pivotal-tracker/client'
 require 'pivotal-tracker/story'
 require 'pivotal-tracker/project'
+require 'pivotal-tracker/account'
+require 'pivotal-tracker/account_membership'
 
 class PivotalTracker
   include HTTParty
