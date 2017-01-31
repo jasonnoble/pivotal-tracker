@@ -32,7 +32,7 @@ VCR.configure do |c|
     ENV['PIVOTAL_USER_NAME']
   end
   c.filter_sensitive_data('<PIVOTAL_PASSWORD>') do |interaction|
-    ENV['PIVOTAL_USER_PASSWORD']
+    CGI.escape(ENV['PIVOTAL_USER_PASSWORD'])
   end
 end
 
