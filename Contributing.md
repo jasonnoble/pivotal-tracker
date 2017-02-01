@@ -13,10 +13,12 @@ cp .env.example .env
 2. Replace the variables in your `.env` file with your PivotalTracker credentials.
 
 ```
-PIVOTAL_TOKEN_ID='98sf98_YOUR_ACTUAL_TOKEN_328asc'
-PIVOTAL_EMAIL='your@email.here'
-PIVOTAL_USER_NAME='yourusername'
-PIVOTAL_USER_PASSWORD='yourpassword'
+PIVOTAL_TOKEN_ID="98sf98_YOUR_ACTUAL_TOKEN_328asc"
+PIVOTAL_EMAIL="your@email.here"
+PIVOTAL_USER_NAME="yourusername"
+PIVOTAL_USER_PASSWORD="yourpassword"
+PROJECT_ID="1_YOUR_PROJECT_ID_3"
+PIVOTAL_ACCOUNT_ID="12_YOUR_ACCOUNT_ID_95"
 ```
 
 3. Create a Pivotal Tracker project and modify your .env file to have the project ID
