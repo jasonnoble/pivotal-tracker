@@ -27,14 +27,14 @@ describe PivotalTracker::Project do
   describe "#find" do
     let(:project) { subject.find(project_id) }
     context "with a valid project id" do
-      let(:project_id) { 1962995 }
+      let(:project_id) { ENV['PROJECT_ID'].to_i }
 
       it "is a project" do
         expect(project).to be_a(PivotalTracker::Project)
       end
 
       it "has the right id" do
-        expect(project.id).to eq(project_id)
+        expect(project.id).to eq(project_id.to_i)
       end
     end
 
@@ -48,7 +48,7 @@ describe PivotalTracker::Project do
   end
 
   describe ".stories" do
-    let(:project) { subject.find(1962995) }
+    let(:project) { subject.find(ENV['PROJECT_ID']) }
 
     it "returns an array of stories" do
       stories = project.stories
