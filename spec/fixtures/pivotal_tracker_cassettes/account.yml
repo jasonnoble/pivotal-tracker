@@ -1,0 +1,243 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.pivotaltracker.com/services/v5/accounts//memberships
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 31 Jan 2017 00:59:55 GMT
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 5d32b0022035b72c16b087e5562eefd8
+      X-Runtime:
+      - '0.034957'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - 5dc6e035-1bdd-4392-6cd2-83711681955f
+      Content-Length:
+      - '270'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"code":"unfound_resource","kind":"error","error":"The object you tried
+        to access could not be found.  It may have been removed by another user, you
+        may be using the ID of another object type, or you may be trying to access
+        a sub-resource at the wrong point in a tree."}'
+    http_version: 
+  recorded_at: Tue, 31 Jan 2017 00:59:55 GMT
+- request:
+    method: get
+    uri: https://www.pivotaltracker.com/services/v5/accounts/962753
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 31 Jan 2017 01:11:33 GMT
+      Etag:
+      - '"dffd11877efc45765449231dbb55d20e"'
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - f9ca7675f627a4a0699229bd3db2e681
+      X-Runtime:
+      - '0.096709'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - 87f596cc-ba42-4fc8-5769-73d5ed162286
+      Content-Length:
+      - '187'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"kind":"account","id":962753,"name":"GEM RSPEC ACCOUNT MEMBERSHIP","plan":"Free","status":"active","days_left":30,"created_at":"2017-01-31T00:37:00Z","updated_at":"2017-01-31T00:37:00Z"}'
+    http_version: 
+  recorded_at: Tue, 31 Jan 2017 01:11:33 GMT
+- request:
+    method: get
+    uri: https://www.pivotaltracker.com/services/v5/accounts/962753/memberships
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 31 Jan 2017 01:18:09 GMT
+      Etag:
+      - '"514f260f6f20b70641badcb59f29593c"'
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 4a29b48b95ec0ce52d8065db3596aadc
+      X-Runtime:
+      - '0.060767'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - 1f165f9f-00bf-4a3a-62f7-009bafcac804
+      Content-Length:
+      - '736'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"kind":"account_membership","id":2413445,"person":{"kind":"person","id":2413445,"name":"Kyle
+        Heppenstall","email":"kyle.heppenstall@gmail.com","initials":"KH","username":"kyleheppenstall"},"account_id":962753,"created_at":"2017-01-31T00:56:25Z","updated_at":"2017-01-31T00:56:25Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false},{"kind":"account_membership","id":2415615,"person":{"kind":"person","id":2415615,"name":"Mike
+        Schutte","email":"<PIVOTAL_EMAIL_ADDRESS>","initials":"TMS","username":"<PIVOTAL_USER_NAME>"},"account_id":962753,"created_at":"2017-01-31T00:37:00Z","updated_at":"2017-01-31T00:37:00Z","owner":true,"admin":false,"project_creator":false,"timekeeper":true,"time_enterer":false}]'
+    http_version: 
+  recorded_at: Tue, 31 Jan 2017 01:18:09 GMT
+- request:
+    method: get
+    uri: https://www.pivotaltracker.com/services/v5/accounts/123456789123456789
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 31 Jan 2017 01:39:23 GMT
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 5b176c5a9e6a799c816c78aab5782f07
+      X-Runtime:
+      - '0.032347'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - f956dac4-c61f-4dd8-55cb-dabf559ba27a
+      Content-Length:
+      - '270'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"code":"unfound_resource","kind":"error","error":"The object you tried
+        to access could not be found.  It may have been removed by another user, you
+        may be using the ID of another object type, or you may be trying to access
+        a sub-resource at the wrong point in a tree."}'
+    http_version: 
+  recorded_at: Tue, 31 Jan 2017 01:39:23 GMT
+recorded_with: VCR 3.0.3
