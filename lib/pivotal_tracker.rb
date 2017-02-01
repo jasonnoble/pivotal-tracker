@@ -28,3 +28,4 @@ PivotalTracker.autoload :Notification,      'pivotal-tracker/notification'
 PivotalTracker.autoload :OtherIntegration,  'pivotal-tracker/other_integration'
 PivotalTracker.autoload :ProjectSummary,    'pivotal-tracker/project_summary'
 
+PivotalTracker.autoload :IterationOverride, 'pivotal-tracker/iteration_override'
