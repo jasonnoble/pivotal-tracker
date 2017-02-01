@@ -1,7 +1,7 @@
 class PivotalTracker::Story
   attr_accessor :accepted_at, :created_at, :current_state, :deadline,
                 :description, :estimate, :id, :kind, :labels, :name,
-                :project_id, :requested_by_id, :story_type,
+                :owner_ids, :owned_by_id, :project_id, :requested_by_id, :story_type,
                 :updated_at, :url
 
   def initialize(project_attributes)
