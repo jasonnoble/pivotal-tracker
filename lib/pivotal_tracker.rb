@@ -9,6 +9,8 @@ PivotalTracker.autoload :Story,             'pivotal-tracker/story'
 PivotalTracker.autoload :Project,           'pivotal-tracker/project'
 PivotalTracker.autoload :Account,           'pivotal-tracker/account'
 PivotalTracker.autoload :AccountMembership, 'pivotal-tracker/account_membership'
+PivotalTracker.autoload :ProjectWorkspace,  'pivotal-tracker/project_workspace'
+PivotalTracker.autoload :Resource,          'pivotal-tracker/resource'
 
 class PivotalTracker
   include HTTParty
