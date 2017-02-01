@@ -34,3 +34,4 @@ PivotalTracker.autoload :FileAttachment,             'pivotal-tracker/file_attac
 PivotalTracker.autoload :GetSatisfactionIntegration, 'pivotal-tracker/get_satisfaction_integration'
 PivotalTracker.autoload :ExternalStory,              'pivotal-tracker/external_story'
 PivotalTracker.autoload :ProjectIdAndVersion,        'pivotal-tracker/project_id_and_version'
+PivotalTracker.autoload :Label,                      'pivotal-tracker/label'
