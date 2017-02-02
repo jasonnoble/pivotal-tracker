@@ -1,8 +1,11 @@
 require 'httparty'
-require 'pry'
 
 class PivotalTracker
+  include HTTParty
 
+  base_uri 'https://www.pivotaltracker.com/services/v5'
+
+  PermissionDenied = Class.new(Error)
 end
 
 PivotalTracker.autoload :Client,            'pivotal-tracker/client'
@@ -16,11 +19,3 @@ PivotalTracker.autoload :JiraIntegration,   'pivotal-tracker/jira_integration'
 PivotalTracker.autoload :Me,                'pivotal-tracker/me'
 PivotalTracker.autoload :MembershipSummary, 'pivotal-tracker/membership_summary'
 PivotalTracker.autoload :GoogleAttachment,  'pivotal-tracker/google_attachment'
-
-class PivotalTracker
-  include HTTParty
-
-  base_uri 'https://www.pivotaltracker.com/services/v5'
-
-  PermissionDenied = Class.new(Error)
-end
