@@ -1,4 +1,4 @@
-require './lib/pivotal_tracker'
+require './lib/pivotal-tracker/jira_integration'
 
 FactoryGirl.define do
   factory :jira_integration, class: PivotalTracker::JiraIntegration do
