@@ -2,6 +2,7 @@ require 'vcr'
 require 'pivotal_tracker'
 require 'dotenv/load'
 require 'pry'
+require 'faker'
 
 RSpec.configure do |config|
   config.run_all_when_everything_filtered = true

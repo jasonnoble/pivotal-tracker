@@ -22,3 +22,6 @@ PivotalTracker.autoload :GoogleAttachment,  'pivotal-tracker/google_attachment'
 PivotalTracker.autoload :ProjectSnapshot,   'pivotal-tracker/project_snapshot'
 PivotalTracker.autoload :Following,         'pivotal-tracker/following'
 PivotalTracker.autoload :Iteration,         'pivotal-tracker/iteration'
+PivotalTracker.autoload :AccountMembership, 'pivotal-tracker/account_membership'		
+PivotalTracker.autoload :Proxy,             'pivotal-tracker/proxy'
+

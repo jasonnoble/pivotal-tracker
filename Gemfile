@@ -14,4 +14,5 @@ group :test do
   gem 'vcr'
   gem 'rake'
   gem 'pry'
+  gem 'faker'
 end
