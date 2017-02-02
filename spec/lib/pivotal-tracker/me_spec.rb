@@ -7,8 +7,6 @@ describe PivotalTracker::Me do
 
       expect(me).to be_a(PivotalTracker::Me)
 
-      # binding.pry
-
       FactoryGirl.attributes_for(:me).each do |attribute, value|
         expect(me.send(attribute)).to eq(value)
       end
