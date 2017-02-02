@@ -30,10 +30,24 @@ PIVOTAL_PROJECT_ID='9_YOUR_PROJECT_ID_2'
 4. Make sure your `.env` file is added to your [global gitignore file](https://help.github.com/articles/ignoring-files/#create-a-global-gitignore)
 
 
-### To find your API token:
-   1. Click your username dropdown on the top right of the screen (https://www.pivotaltracker.com/dashboard).
-   2. Click 'Profile'
-   3. Your API token is at the bottom of the list. Copy it for your `.env` file.
+### To find your PIVOTAL_TOKEN_ID:
+  1. Click your username dropdown on the top right of the screen (https://www.pivotaltracker.com/dashboard).
+  2. Click 'Profile'
+  3. Your API token is at the bottom of the list. Copy it for your `.env` file.
+
+### To find your PIVOTAL_ACCOUNT_ID:
+  1. Click your username dropdown on the top right of the screen (https://www.pivotaltracker.com/dashboard).
+  2. Click 'Accounts'
+  3. If you have already created an account, click 'MANAGE ACCOUNT'
+  * Your account id is in the URL. E.g., "https://www.pivotaltracker.com/accounts/9_ACTUAL_ACCOUNT_ID_3/plans"
+  4. If you don't have an account, click 'CREATE ACCOUNT' and come on back to step 3.
+
+### To find your PROJECT_ID:
+  1. Click your username dropdown on the top right of the screen (https://www.pivotaltracker.com/dashboard).
+  2. Click 'Accounts'
+  3. Click on one of your projects (either 'Accounts I Own' or 'Accounts I am a Member of').
+  * Your project id is in the URL. E.g., "https://www.pivotaltracker.com/n/projects/1_ACTUAL_PROJECT_ID_5"
+  4. If you don't have an project, click 'CREATE PROJECT' and come on back to step 3.
 
 ## Troubleshooting
 
