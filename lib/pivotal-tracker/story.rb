@@ -5,7 +5,7 @@ class PivotalTracker::Story < PivotalTracker::Resource
                 :updated_at, :url
 
   def self.all(project_id)
-    stories = PivotalTracker::ApiService.all_nested('projects', project_id, 'stories')
-    stories.map { |story| new(story) }
+    raw_stories = PivotalTracker::ApiService.all_nested('projects', project_id, 'stories')
+    raw_stories.map { |story| new(story) }
   end
 end

@@ -5,7 +5,7 @@ class PivotalTracker::Account < PivotalTracker::Resource
 
   def self.find(account_id)
     raw_account = PivotalTracker::ApiService.find('accounts', account_id)
-    new(raw_account) if raw_account
+    new(raw_account)
   end
 
   def memberships

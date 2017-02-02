@@ -21,7 +21,7 @@ describe PivotalTracker::Client do
 
   describe "#token=(token)" do
     it "sets the token header" do
-      expect{ subject.token = '1234567890' }.to change(PivotalTracker, :headers).from({}).to({ "X-TrackerToken" => "1234567890" })
+      expect{ subject.token = '1234567890' }.to change(PivotalTracker::ApiService, :headers).from({}).to({ "X-TrackerToken" => "1234567890" })
     end
   end
 end

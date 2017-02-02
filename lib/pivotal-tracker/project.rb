@@ -9,8 +9,8 @@ class PivotalTracker::Project < PivotalTracker::Resource
                 :public, :start_date, :start_time, :time_zone, :updated_at,
                 :velocity_averaged_over, :version, :week_start_day
   def self.all
-    projects = PivotalTracker::ApiService.all('projects')
-    projects.map { |project| new(project) }
+    raw_projects = PivotalTracker::ApiService.all('projects')
+    raw_projects.map { |project| new(project) }
   end
 
   def self.find(project_id)

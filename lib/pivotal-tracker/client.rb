@@ -10,9 +10,9 @@ class PivotalTracker::Client
   def self.token=(token)
     @token = token
     if token.nil?
-      PivotalTracker.default_options[:headers] && PivotalTracker.default_options[:headers].delete("X-TrackerToken")
+      PivotalTracker::ApiService.default_options[:headers] && PivotalTracker::ApiService.default_options[:headers].delete("X-TrackerToken")
     else
-      PivotalTracker.headers "X-TrackerToken" => token
+      PivotalTracker::ApiService.headers "X-TrackerToken" => token
     end
   end
 end

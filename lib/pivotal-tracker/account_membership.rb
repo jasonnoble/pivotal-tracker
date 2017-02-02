@@ -5,8 +5,8 @@ class PivotalTracker::AccountMembership < PivotalTracker::Resource
                 :timekeeper, :updated_at
 
   def self.all(account_id)
-    memberships = PivotalTracker::ApiService.all_nested('accounts', account_id, 'memberships')
-    memberships.map { |membership| new(membership) }
+    raw_memberships = PivotalTracker::ApiService.all_nested('accounts', account_id, 'memberships')
+    raw_memberships.map { |membership| new(membership) }
   end
 
   def self.create(membership_attributes, account_id)

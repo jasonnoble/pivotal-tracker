@@ -41,8 +41,8 @@ describe PivotalTracker::Project do
     context "with an invalid project id" do
       let(:project_id) { 123456789123456789 }
 
-      it "returns nil" do
-        expect(project).to be_nil
+      it "returns an error" do
+        expect { project }.to raise_error PivotalTracker::ApiService::InvalidRequest
       end
     end
   end

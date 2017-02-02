@@ -1,34 +1,40 @@
+require 'httparty'
+
 class PivotalTracker::ApiService
+  include HTTParty
+
+  base_uri 'https://www.pivotaltracker.com/services/v5'
+
+  InvalidRequest = Class.new(Error)
+
   def self.find(collection, id)
-    response = PivotalTracker.get("/#{collection}/#{id}")
-    response.parsed_response if success?(response.code)
+    response = get("/#{collection}/#{id}")
+    parsed_data(response)
   end
 
   def self.create_account_membership(membership_attributes, account_id)
-    response = PivotalTracker.post("/accounts/#{account_id}/memberships", query: membership_attributes)
-    if success?(response.code)
-      response.parsed_response
-    else
-      raise(PivotalTracker::PermissionDenied, "Only Admins and Owners can add account memberships")
-    end
+    response = post("/accounts/#{account_id}/memberships", query: membership_attributes)
+    parsed_data(response)
   end
 
   def self.all(collection)
-    PivotalTracker.get("/#{collection}").parsed_response
+    response = get("/#{collection}")
+    parsed_data(response)
   end
 
   def self.all_nested(owner_collection, owner_id, target_collection)
-    response = PivotalTracker.get("/#{owner_collection}/#{owner_id}/#{target_collection}")
-    if success?(response.code)
-      response.parsed_response
-    else
-      puts response.inspect
-    end
+    response = get("/#{owner_collection}/#{owner_id}/#{target_collection}")
+    parsed_data(response)
   end
 
   def self.get_token(username, password)
-    PivotalTracker.basic_auth username, password
-    PivotalTracker.get('/me')['api_token']
+    basic_auth username, password
+    get('/me')['api_token']
+  end
+
+  def self.parsed_data(response)
+    return response.parsed_response if success?(response.code)
+    raise(InvalidRequest, "Invalid credentials, id number, or resource name.")
   end
 
   def self.success?(code)
