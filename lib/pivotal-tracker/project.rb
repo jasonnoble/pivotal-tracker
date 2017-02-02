@@ -1,3 +1,5 @@
+require './lib/pivotal-tracker/resource'
+
 class PivotalTracker::Project < PivotalTracker::Resource
   attr_accessor :account_id, :atom_enabled, :automatic_planning,
                 :bugs_and_chores_are_estimatable, :created_at,

@@ -1,3 +1,5 @@
+require './lib/pivotal-tracker/resource'
+
 class PivotalTracker::Story < PivotalTracker::Resource
   attr_accessor :accepted_at, :created_at, :current_state, :deadline,
                 :description, :estimate, :id, :kind, :labels, :name,
