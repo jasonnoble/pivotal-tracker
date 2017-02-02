@@ -1,6 +1,6 @@
 class PivotalTracker::ProjectSnapshot
   
-  attr_accessor :date, :current, :backlog, :icebox, :kind
+  attr_accessor :backlog, :current, :date, :icebox, :kind
 
   def initialize(attributes)
     attributes.each do |attribute, value|
