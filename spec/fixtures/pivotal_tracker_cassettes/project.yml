@@ -56,12 +56,12 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '[{"id":1962995,"kind":"project","name":"Gem RSpec Project","version":5,"iteration_length":1,"week_start_day":"Monday","point_scale":"0,1,2,3","point_scale_is_custom":false,"bugs_and_chores_are_estimatable":false,"automatic_planning":true,"enable_tasks":true,"time_zone":{"kind":"time_zone","olson_name":"America/Los_Angeles","offset":"-08:00"},"velocity_averaged_over":3,"number_of_done_iterations_to_show":12,"has_google_domain":false,"enable_incoming_emails":true,"initial_velocity":10,"public":true,"atom_enabled":false,"project_type":"public","start_time":"2017-01-30T08:00:00Z","created_at":"2017-01-30T21:36:49Z","updated_at":"2017-01-30T21:36:49Z","account_id":470491,"current_iteration_number":1,"enable_following":true}]'
+      string: '[{"id":<PIVOTAL_PROJECT_ID>,"kind":"project","name":"Gem RSpec Project","version":5,"iteration_length":1,"week_start_day":"Monday","point_scale":"0,1,2,3","point_scale_is_custom":false,"bugs_and_chores_are_estimatable":false,"automatic_planning":true,"enable_tasks":true,"time_zone":{"kind":"time_zone","olson_name":"America/Los_Angeles","offset":"-08:00"},"velocity_averaged_over":3,"number_of_done_iterations_to_show":12,"has_google_domain":false,"enable_incoming_emails":true,"initial_velocity":10,"public":true,"atom_enabled":false,"project_type":"public","start_time":"2017-01-30T08:00:00Z","created_at":"2017-01-30T21:36:49Z","updated_at":"2017-01-30T21:36:49Z","account_id":470491,"current_iteration_number":1,"enable_following":true}]'
     http_version: 
   recorded_at: Mon, 30 Jan 2017 22:00:51 GMT
 - request:
     method: get
-    uri: https://www.pivotaltracker.com/services/v5/projects/1962995
+    uri: https://www.pivotaltracker.com/services/v5/projects/<PIVOTAL_PROJECT_ID>
     body:
       encoding: US-ASCII
       string: ''
@@ -117,12 +117,12 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":1962995,"kind":"project","name":"Gem RSpec Project","version":5,"iteration_length":1,"week_start_day":"Monday","point_scale":"0,1,2,3","point_scale_is_custom":false,"bugs_and_chores_are_estimatable":false,"automatic_planning":true,"enable_tasks":true,"time_zone":{"kind":"time_zone","olson_name":"America/Los_Angeles","offset":"-08:00"},"velocity_averaged_over":3,"number_of_done_iterations_to_show":12,"has_google_domain":false,"enable_incoming_emails":true,"initial_velocity":10,"public":true,"atom_enabled":false,"project_type":"public","start_time":"2017-01-30T08:00:00Z","created_at":"2017-01-30T21:36:49Z","updated_at":"2017-01-30T21:36:49Z","account_id":470491,"current_iteration_number":1,"enable_following":true}'
+      string: '{"id":<PIVOTAL_PROJECT_ID>,"kind":"project","name":"Gem RSpec Project","version":5,"iteration_length":1,"week_start_day":"Monday","point_scale":"0,1,2,3","point_scale_is_custom":false,"bugs_and_chores_are_estimatable":false,"automatic_planning":true,"enable_tasks":true,"time_zone":{"kind":"time_zone","olson_name":"America/Los_Angeles","offset":"-08:00"},"velocity_averaged_over":3,"number_of_done_iterations_to_show":12,"has_google_domain":false,"enable_incoming_emails":true,"initial_velocity":10,"public":true,"atom_enabled":false,"project_type":"public","start_time":"2017-01-30T08:00:00Z","created_at":"2017-01-30T21:36:49Z","updated_at":"2017-01-30T21:36:49Z","account_id":470491,"current_iteration_number":1,"enable_following":true}'
     http_version: 
   recorded_at: Mon, 30 Jan 2017 22:00:53 GMT
 - request:
     method: get
-    uri: https://www.pivotaltracker.com/services/v5/projects/1962995
+    uri: https://www.pivotaltracker.com/services/v5/projects/<PIVOTAL_PROJECT_ID>
     body:
       encoding: US-ASCII
       string: ''
@@ -178,7 +178,7 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":1962995,"kind":"project","name":"Gem RSpec Project","version":5,"iteration_length":1,"week_start_day":"Monday","point_scale":"0,1,2,3","point_scale_is_custom":false,"bugs_and_chores_are_estimatable":false,"automatic_planning":true,"enable_tasks":true,"time_zone":{"kind":"time_zone","olson_name":"America/Los_Angeles","offset":"-08:00"},"velocity_averaged_over":3,"number_of_done_iterations_to_show":12,"has_google_domain":false,"enable_incoming_emails":true,"initial_velocity":10,"public":true,"atom_enabled":false,"project_type":"public","start_time":"2017-01-30T08:00:00Z","created_at":"2017-01-30T21:36:49Z","updated_at":"2017-01-30T21:36:49Z","account_id":470491,"current_iteration_number":1,"enable_following":true}'
+      string: '{"id":<PIVOTAL_PROJECT_ID>,"kind":"project","name":"Gem RSpec Project","version":5,"iteration_length":1,"week_start_day":"Monday","point_scale":"0,1,2,3","point_scale_is_custom":false,"bugs_and_chores_are_estimatable":false,"automatic_planning":true,"enable_tasks":true,"time_zone":{"kind":"time_zone","olson_name":"America/Los_Angeles","offset":"-08:00"},"velocity_averaged_over":3,"number_of_done_iterations_to_show":12,"has_google_domain":false,"enable_incoming_emails":true,"initial_velocity":10,"public":true,"atom_enabled":false,"project_type":"public","start_time":"2017-01-30T08:00:00Z","created_at":"2017-01-30T21:36:49Z","updated_at":"2017-01-30T21:36:49Z","account_id":470491,"current_iteration_number":1,"enable_following":true}'
     http_version: 
   recorded_at: Mon, 30 Jan 2017 22:01:30 GMT
 - request:
@@ -245,7 +245,7 @@ http_interactions:
   recorded_at: Mon, 30 Jan 2017 22:02:15 GMT
 - request:
     method: get
-    uri: https://www.pivotaltracker.com/services/v5/projects/1962995/stories
+    uri: https://www.pivotaltracker.com/services/v5/projects/<PIVOTAL_PROJECT_ID>/stories
     body:
       encoding: US-ASCII
       string: ''
@@ -314,4 +314,124 @@ http_interactions:
       string: "[]"
     http_version: 
   recorded_at: Mon, 30 Jan 2017 22:02:15 GMT
+- request:
+    method: get
+    uri: https://www.pivotaltracker.com/services/v5/projects/0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+      Authorization:
+      - Basic YW5ud29sZmY6U3dhbXBNb25zdGVyMzA=
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Feb 2017 22:11:23 GMT
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 7c9ba2eb6f389821822282b9089a5d30
+      X-Runtime:
+      - '0.018932'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - 56a88883-a7c0-4b1b-6546-1c69ce626cbc
+      Content-Length:
+      - '209'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"code":"invalid_authentication","kind":"error","error":"Invalid authentication
+        credentials were presented.","possible_fix":"Verify that your token value
+        matches what''s shown on your Profile page in Tracker."}'
+    http_version: 
+  recorded_at: Thu, 02 Feb 2017 22:11:22 GMT
+- request:
+    method: get
+    uri: https://www.pivotaltracker.com/services/v5/projects/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Feb 2017 22:17:52 GMT
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 63de90c6ec8e8d5a0c89b2530c49e9aa
+      X-Runtime:
+      - '0.017299'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - b2aa8ded-4045-4413-7425-ec286fb11fcf
+      Content-Length:
+      - '209'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"code":"invalid_authentication","kind":"error","error":"Invalid authentication
+        credentials were presented.","possible_fix":"Verify that your token value
+        matches what''s shown on your Profile page in Tracker."}'
+    http_version: 
+  recorded_at: Thu, 02 Feb 2017 22:17:52 GMT
 recorded_with: VCR 3.0.3
