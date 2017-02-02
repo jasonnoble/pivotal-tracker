@@ -6,6 +6,7 @@ require 'pivotal_tracker'
 require 'dotenv/load'
 require 'pry'
 require 'faker'
+require 'factory_girl'
 
 RSpec.configure do |config|
   config.run_all_when_everything_filtered = true
@@ -55,4 +56,12 @@ end
 
 def set_token
   PivotalTracker::Client.token = ENV['PIVOTAL_TOKEN_ID']
+end
+
+RSpec.configure do |config|
+  config.include FactoryGirl::Syntax::Methods
+
+  config.before(:suite) do
+    FactoryGirl.find_definitions
+  end
 end

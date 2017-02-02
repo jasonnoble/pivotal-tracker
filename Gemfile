@@ -16,4 +16,5 @@ group :test do
   gem 'pry'
   gem 'faker'
   gem 'simplecov', :require => false
+  gem "factory_girl", "~> 4.0"
 end
