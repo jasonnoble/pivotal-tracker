@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.pivotaltracker.com/services/v5/accounts/962655
+    uri: https://www.pivotaltracker.com/services/v5/accounts/<PIVOTAL_ACCOUNT_ID>
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       X-Trackertoken:
       - "<PIVOTAL_API_TOKEN>"
       Authorization:
-      - Basic YW5ud29sZmY6SXRoYWNhVGhpbWJsZVRpbmEzMA==
+      - Basic YW5ud29sZmY6U3dhbXBNb25zdGVyMzA=
   response:
     status:
       code: 200
@@ -25,107 +25,48 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Cache-Control:
-      - must-revalidate, private, max-age=0
+      - must-revalidate, private, max-age=<PIVOTAL_MEMBERSHIP_ID>
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 01 Feb 2017 23:43:58 GMT
+      - Thu, <PIVOTAL_MEMBERSHIP_ID>2 Feb 2<PIVOTAL_MEMBERSHIP_ID>17 23:<PIVOTAL_MEMBERSHIP_ID><PIVOTAL_MEMBERSHIP_ID>:52
+        GMT
       Etag:
-      - '"e4fbf8a2f65449b149f65d0619b0bc4e"'
+      - '"c3f695f53cee51779a153fcb52bb2fd2"'
       Server:
       - nginx + Phusion Passenger
       Status:
-      - 200 OK
+      - 2<PIVOTAL_MEMBERSHIP_ID><PIVOTAL_MEMBERSHIP_ID> OK
       Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
+      - max-age=31536<PIVOTAL_MEMBERSHIP_ID><PIVOTAL_MEMBERSHIP_ID><PIVOTAL_MEMBERSHIP_ID>;
+        includeSubDomains; preload
       X-Powered-By:
       - Phusion Passenger Enterprise
       X-Rack-Cache:
       - miss
       X-Request-Id:
-      - 84257819936cd604b1e455238e07c24e
+      - c6a6daff58d3f<PIVOTAL_MEMBERSHIP_ID>35bdbee2<PIVOTAL_MEMBERSHIP_ID>93bfe566c
       X-Runtime:
-      - '0.064680'
+      - "<PIVOTAL_MEMBERSHIP_ID>.<PIVOTAL_MEMBERSHIP_ID>87392"
       X-Tracker-Client-Pinger-Interval:
-      - '20'
+      - 2<PIVOTAL_MEMBERSHIP_ID>
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       X-Vcap-Request-Id:
-      - e1ceec18-a213-4e05-584f-ecf8d97ca1a7
+      - e3e4bc<PIVOTAL_MEMBERSHIP_ID>b-5d2a-473<PIVOTAL_MEMBERSHIP_ID>-413<PIVOTAL_MEMBERSHIP_ID>-fdc33c3b8548
       Content-Length:
       - '179'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"kind":"account","id":962655,"name":"Ann Wolff''s Projects","plan":"Free","status":"active","days_left":28,"created_at":"2017-01-30T20:49:33Z","updated_at":"2017-01-30T20:49:33Z"}'
+      string: '{"kind":"account","id":<PIVOTAL_ACCOUNT_ID>,"name":"<FULL_NAME>''s
+        Projects","plan":"Free","status":"active","days_left":27,"created_at":"2<PIVOTAL_MEMBERSHIP_ID>17-<PIVOTAL_MEMBERSHIP_ID>1-3<PIVOTAL_MEMBERSHIP_ID>T2<PIVOTAL_MEMBERSHIP_ID>:49:33Z","updated_at":"2<PIVOTAL_MEMBERSHIP_ID>17-<PIVOTAL_MEMBERSHIP_ID>1-3<PIVOTAL_MEMBERSHIP_ID>T2<PIVOTAL_MEMBERSHIP_ID>:49:33Z"}'
     http_version: 
-  recorded_at: Wed, 01 Feb 2017 23:43:58 GMT
-- request:
-    method: post
-    uri: https://www.pivotaltracker.com/services/v5/accounts/962655/memberships?email=jerald_brown@klingjenkins.io&initials=AW&name=Evans%20Koss
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      X-Trackertoken:
-      - "<PIVOTAL_API_TOKEN>"
-      Authorization:
-      - Basic YW5ud29sZmY6SXRoYWNhVGhpbWJsZVRpbmEzMA==
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'false'
-      Access-Control-Allow-Headers:
-      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
-      Access-Control-Allow-Methods:
-      - GET, POST, PUT, DELETE, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 01 Feb 2017 23:43:58 GMT
-      Etag:
-      - '"12e0550fb6cdf3ff2e5a784a9617cc13"'
-      Server:
-      - nginx + Phusion Passenger
-      Status:
-      - 200 OK
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
-      X-Powered-By:
-      - Phusion Passenger Enterprise
-      X-Rack-Cache:
-      - invalidate, pass
-      X-Request-Id:
-      - 493614cff9a76e0d47dc6acb0816ed62
-      X-Runtime:
-      - '0.147836'
-      X-Tracker-Client-Pinger-Interval:
-      - '20'
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      X-Vcap-Request-Id:
-      - 922aa293-6c15-4f65-7e16-5568a6fd5ce1
-      Content-Length:
-      - '361'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"kind":"account_membership","id":1468223,"person":{"kind":"person","id":2510905,"name":"Evans
-        Koss","email":"jerald_brown@klingjenkins.io","initials":"AW","username":"evansk"},"account_id":962655,"created_at":"2017-02-01T23:43:58Z","updated_at":"2017-02-01T23:43:58Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false}'
-    http_version: 
-  recorded_at: Wed, 01 Feb 2017 23:43:58 GMT
+  recorded_at: Thu, 02 Feb 2017 23:00:52 GMT
 - request:
     method: get
-    uri: https://www.pivotaltracker.com/services/v5/accounts/962655/memberships
+    uri: https://www.pivotaltracker.com/services/v5/accounts/<PIVOTAL_ACCOUNT_ID>/memberships
     body:
       encoding: US-ASCII
       string: ''
@@ -133,7 +74,7 @@ http_interactions:
       X-Trackertoken:
       - "<PIVOTAL_API_TOKEN>"
       Authorization:
-      - Basic YW5ud29sZmY6SXRoYWNhVGhpbWJsZVRpbmEzMA==
+      - Basic YW5ud29sZmY6U3dhbXBNb25zdGVyMzA=
   response:
     status:
       code: 200
@@ -148,62 +89,60 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Cache-Control:
-      - must-revalidate, private, max-age=0
+      - must-revalidate, private, max-age=<PIVOTAL_MEMBERSHIP_ID>
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 01 Feb 2017 23:43:59 GMT
+      - Thu, <PIVOTAL_MEMBERSHIP_ID>2 Feb 2<PIVOTAL_MEMBERSHIP_ID>17 23:<PIVOTAL_MEMBERSHIP_ID><PIVOTAL_MEMBERSHIP_ID>:52
+        GMT
       Etag:
-      - '"071e84c9182221141b9199320171ffcb"'
+      - '"e97a6a9441b5e<PIVOTAL_MEMBERSHIP_ID>691a5753a5f42bd189"'
       Server:
       - nginx + Phusion Passenger
       Status:
-      - 200 OK
+      - 2<PIVOTAL_MEMBERSHIP_ID><PIVOTAL_MEMBERSHIP_ID> OK
       Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
+      - max-age=31536<PIVOTAL_MEMBERSHIP_ID><PIVOTAL_MEMBERSHIP_ID><PIVOTAL_MEMBERSHIP_ID>;
+        includeSubDomains; preload
       X-Powered-By:
       - Phusion Passenger Enterprise
       X-Rack-Cache:
       - miss
       X-Request-Id:
-      - 92b27bf2aab2380d7e48b0dbed66e474
+      - c1316eb59ebfc6f39d265f2ad497ae34
       X-Runtime:
-      - '0.053551'
+      - "<PIVOTAL_MEMBERSHIP_ID>.<PIVOTAL_MEMBERSHIP_ID>55391"
       X-Tracker-Client-Pinger-Interval:
-      - '20'
+      - 2<PIVOTAL_MEMBERSHIP_ID>
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       X-Vcap-Request-Id:
-      - d7fbbb92-4b08-42a5-63e5-c25b8f0f827a
+      - "<PIVOTAL_MEMBERSHIP_ID>d44b621-bb16-43ae-545c-1dc77b3cd19a"
       Content-Length:
-      - '1816'
+      - '711'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '[{"kind":"account_membership","id":2411963,"person":{"kind":"person","id":2411963,"name":"Ann
-        Wolff","email":"<PIVOTAL_EMAIL_ADDRESS>","initials":"AW","username":"<PIVOTAL_USER_NAME>"},"account_id":962655,"created_at":"2017-01-30T20:49:33Z","updated_at":"2017-01-30T20:49:33Z","owner":true,"admin":false,"project_creator":false,"timekeeper":true,"time_enterer":false},{"kind":"account_membership","id":2413547,"person":{"kind":"person","id":2413547,"name":"Lucy
-        Conklin","email":"lucy.conklin@gmail.com","initials":"LC","username":"lucyconklin"},"account_id":962655,"created_at":"2017-02-01T00:38:47Z","updated_at":"2017-02-01T00:38:47Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false},{"kind":"account_membership","id":2509967,"person":{"kind":"person","id":2509967,"name":"Mr.
-        Chelsie Borer","email":"mozell.funk@mrazfadel.com","initials":"LC","username":"mrchelsie"},"account_id":962655,"created_at":"2017-02-01T22:10:17Z","updated_at":"2017-02-01T22:10:17Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false},{"kind":"account_membership","id":2510209,"person":{"kind":"person","id":2510209,"name":"Yvette
-        Morar","email":"garrick.goodwin@kuhlman.name","initials":"LC","username":"yvettemorar"},"account_id":962655,"created_at":"2017-02-01T22:20:06Z","updated_at":"2017-02-01T22:20:06Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false},{"kind":"account_membership","id":2510905,"person":{"kind":"person","id":2510905,"name":"Evans
-        Koss","email":"jerald_brown@klingjenkins.io","initials":"AW","username":"evansk"},"account_id":962655,"created_at":"2017-02-01T23:43:58Z","updated_at":"2017-02-01T23:43:58Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false}]'
+      string: '[{"kind":"account_membership","id":2411963,"person":{"kind":"person","id":2411963,"name":"<FULL_NAME>","email":"<PIVOTAL_EMAIL_ADDRESS>","initials":"<INITIALS>","username":"<PIVOTAL_USER_NAME>"},"account_id":<PIVOTAL_ACCOUNT_ID>,"created_at":"2<PIVOTAL_MEMBERSHIP_ID>17-<PIVOTAL_MEMBERSHIP_ID>1-3<PIVOTAL_MEMBERSHIP_ID>T2<PIVOTAL_MEMBERSHIP_ID>:49:33Z","updated_at":"2<PIVOTAL_MEMBERSHIP_ID>17-<PIVOTAL_MEMBERSHIP_ID>1-3<PIVOTAL_MEMBERSHIP_ID>T2<PIVOTAL_MEMBERSHIP_ID>:49:33Z","owner":true,"admin":false,"project_creator":false,"timekeeper":true,"time_enterer":false},{"kind":"account_membership","id":2548239,"person":{"kind":"person","id":2548239,"name":"Larue
+        Mohr","email":"laney.hoeger@senger.name","initials":"LM","username":"laruem"},"account_id":<PIVOTAL_ACCOUNT_ID>,"created_at":"2<PIVOTAL_MEMBERSHIP_ID>17-<PIVOTAL_MEMBERSHIP_ID>2-<PIVOTAL_MEMBERSHIP_ID>2T22:55:56Z","updated_at":"2<PIVOTAL_MEMBERSHIP_ID>17-<PIVOTAL_MEMBERSHIP_ID>2-<PIVOTAL_MEMBERSHIP_ID>2T22:55:56Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false}]'
     http_version: 
-  recorded_at: Wed, 01 Feb 2017 23:43:59 GMT
+  recorded_at: Thu, 02 Feb 2017 23:00:52 GMT
 - request:
-    method: get
-    uri: https://www.pivotaltracker.com/services/v5/accounts/123456789123456789
+    method: post
+    uri: https://www.pivotaltracker.com/services/v5/accounts/<PIVOTAL_ACCOUNT_ID>/memberships?email=laney.hoeger@senger.name&initials=LM&name=Larue%2<PIVOTAL_MEMBERSHIP_ID>Mohr
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       X-Trackertoken:
       - "<PIVOTAL_API_TOKEN>"
       Authorization:
-      - Basic YW5ud29sZmY6SXRoYWNhVGhpbWJsZVRpbmEzMA==
+      - Basic YW5ud29sZmY6U3dhbXBNb25zdGVyMzA=
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 400
+      message: Bad Request
     headers:
       Access-Control-Allow-Credentials:
       - 'false'
@@ -214,101 +153,41 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Cache-Control:
-      - no-cache, private
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 01 Feb 2017 23:43:59 GMT
+      - Thu, <PIVOTAL_MEMBERSHIP_ID>2 Feb 2<PIVOTAL_MEMBERSHIP_ID>17 23:<PIVOTAL_MEMBERSHIP_ID><PIVOTAL_MEMBERSHIP_ID>:53
+        GMT
       Server:
       - nginx + Phusion Passenger
       Status:
-      - 404 Not Found
+      - 4<PIVOTAL_MEMBERSHIP_ID><PIVOTAL_MEMBERSHIP_ID> Bad Request
       Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
-      X-Powered-By:
-      - Phusion Passenger Enterprise
-      X-Rack-Cache:
-      - miss
-      X-Request-Id:
-      - b9696887b88db7b3c0f9eef37e81c866
-      X-Runtime:
-      - '0.028472'
-      X-Tracker-Client-Pinger-Interval:
-      - '20'
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      X-Vcap-Request-Id:
-      - b640db1a-5e49-4813-5869-65ccf7f56e7a
-      Content-Length:
-      - '270'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"code":"unfound_resource","kind":"error","error":"The object you tried
-        to access could not be found.  It may have been removed by another user, you
-        may be using the ID of another object type, or you may be trying to access
-        a sub-resource at the wrong point in a tree."}'
-    http_version: 
-  recorded_at: Wed, 01 Feb 2017 23:43:59 GMT
-- request:
-    method: post
-    uri: https://www.pivotaltracker.com/services/v5/accounts/962655/memberships?email=jacques@cronin.com&initials=AW&name=Hazle%20Prohaska
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      X-Trackertoken:
-      - "<PIVOTAL_API_TOKEN>"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'false'
-      Access-Control-Allow-Headers:
-      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
-      Access-Control-Allow-Methods:
-      - GET, POST, PUT, DELETE, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 01 Feb 2017 23:47:32 GMT
-      Etag:
-      - '"cdf7dcee1b930aa96549c795cef467c1"'
-      Server:
-      - nginx + Phusion Passenger
-      Status:
-      - 200 OK
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
+      - max-age=31536<PIVOTAL_MEMBERSHIP_ID><PIVOTAL_MEMBERSHIP_ID><PIVOTAL_MEMBERSHIP_ID>;
+        includeSubDomains; preload
       X-Powered-By:
       - Phusion Passenger Enterprise
       X-Rack-Cache:
       - invalidate, pass
       X-Request-Id:
-      - 5c837a13b1e52f0b989cbb05e560f54b
+      - fe38f<PIVOTAL_MEMBERSHIP_ID>dc56bee4<PIVOTAL_MEMBERSHIP_ID>3fd74fc4298446<PIVOTAL_MEMBERSHIP_ID>53
       X-Runtime:
-      - '0.206126'
+      - "<PIVOTAL_MEMBERSHIP_ID>.<PIVOTAL_MEMBERSHIP_ID>39923"
       X-Tracker-Client-Pinger-Interval:
-      - '20'
+      - 2<PIVOTAL_MEMBERSHIP_ID>
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       X-Vcap-Request-Id:
-      - 38a85a64-8dd1-4480-75dd-65438b5ec3b4
+      - df<PIVOTAL_MEMBERSHIP_ID>5789<PIVOTAL_MEMBERSHIP_ID>-545a-41dd-4b46-c1fe8e2f57b4
       Content-Length:
-      - '355'
+      - '151'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"kind":"account_membership","id":1468225,"person":{"kind":"person","id":2510923,"name":"Hazle
-        Prohaska","email":"jacques@cronin.com","initials":"AW","username":"hazlep"},"account_id":962655,"created_at":"2017-02-01T23:47:32Z","updated_at":"2017-02-01T23:47:32Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false}'
+      string: '{"code":"invalid_parameter","kind":"error","error":"One or more request
+        parameters was missing or invalid.","general_problem":"Member already exists."}'
     http_version: 
-  recorded_at: Wed, 01 Feb 2017 23:47:32 GMT
+  recorded_at: Thu, 02 Feb 2017 23:00:53 GMT
 recorded_with: VCR 3.0.3

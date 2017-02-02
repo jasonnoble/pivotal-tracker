@@ -28,6 +28,12 @@ VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures/pivotal_tracker_cassettes'
   c.hook_into :webmock
 
+  c.filter_sensitive_data('<FULL_NAME>') do |interaction|
+    ENV['FULL_NAME']
+  end
+  c.filter_sensitive_data('<INITIALS>') do |interaction|
+    ENV['INITIALS']
+  end
   c.filter_sensitive_data('<PIVOTAL_API_TOKEN>') do |interaction|
     ENV['PIVOTAL_TOKEN_ID']
   end
@@ -43,8 +49,17 @@ VCR.configure do |c|
   c.filter_sensitive_data('<PIVOTAL_PASSWORD>') do |interaction|
     CGI.escape(ENV['PIVOTAL_USER_PASSWORD'])
   end
-  c.filter_sensitive_data('<PROJECT_ID>') do |interaction|
-    ENV['PROJECT_ID']
+  c.filter_sensitive_data('<PIVOTAL_PROJECT_ID>') do |interaction|
+    ENV['PIVOTAL_PROJECT_ID']
+  end
+  c.filter_sensitive_data('<PIVOTAL_ACCOUNT_ID>') do |interation|
+    ENV['PIVOTAL_ACCOUNT_ID']
+  end
+  c.filter_sensitive_data('<PIVOTAL_ACCOUNT_NAME>') do |interaction|
+    ENV['PIVOTAL_ACCOUNT_NAME']
+  end
+  c.filter_sensitive_data('<PIVOTAL_MEMBERSHIP_ID>') do |interaction|
+    ENV['PIVOTAL_MEMBERSHIP_ID'].to_i
   end
 end
 

@@ -27,7 +27,7 @@ describe PivotalTracker::Project do
   describe "#find" do
     let(:project) { subject.find(project_id) }
     context "with a valid project id" do
-      let(:project_id) { ENV['PROJECT_ID'].to_i }
+      let(:project_id) { ENV['PIVOTAL_PROJECT_ID'].to_i }
 
       it "is a project" do
         expect(project).to be_a(PivotalTracker::Project)

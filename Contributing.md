@@ -13,12 +13,16 @@ cp .env.example .env
 2. Replace the variables in your `.env` file with your PivotalTracker credentials.
 
 ```
+FULL_NAME="Your Name"
+INITIALS="YN"
 PIVOTAL_TOKEN_ID="98sf98_YOUR_ACTUAL_TOKEN_328asc"
 PIVOTAL_EMAIL="your@email.here"
 PIVOTAL_USER_NAME="yourusername"
 PIVOTAL_USER_PASSWORD="yourpassword"
-PROJECT_ID="1_YOUR_PROJECT_ID_3"
+PIVOTAL_PROJECT_ID="1_YOUR_PROJECT_ID_3"
+PIVOTAL_ACCOUNT_NAME="Your Name's Projects"
 PIVOTAL_ACCOUNT_ID="12_YOUR_ACCOUNT_ID_95"
+PIVOTAL_MEMBERSHIP_ID="YOUR_ACCOUNT_MEMBERSHIP_ID_95"
 ```
 
 3. Create a Pivotal Tracker project and modify your .env file to have the project ID
@@ -42,13 +46,18 @@ PIVOTAL_PROJECT_ID='9_YOUR_PROJECT_ID_2'
   * Your account id is in the URL. E.g., "https://www.pivotaltracker.com/accounts/9_ACTUAL_ACCOUNT_ID_3/plans"
   4. If you don't have an account, click 'CREATE ACCOUNT' and come on back to step 3.
 
-### To find your PROJECT_ID:
+### To find your PIVOTAL_PROJECT_ID:
   1. Click your username dropdown on the top right of the screen (https://www.pivotaltracker.com/dashboard).
   2. Click 'Accounts'
   3. Click on one of your projects (either 'Accounts I Own' or 'Accounts I am a Member of').
   * Your project id is in the URL. E.g., "https://www.pivotaltracker.com/n/projects/1_ACTUAL_PROJECT_ID_5"
   4. If you don't have an project, click 'CREATE PROJECT' and come on back to step 3.
 
+### To find your PIVOTAL_ACCOUNT_NAME:
+  1. Click your username dropdown on the top right of the screen (h    ttps://www.pivotaltracker.com/dashboard).
+  2. Click 'Accounts'
+  * Your account name is in the black box under 'Accounts I Own'. E.g., "Your Name's Projects".
+  3. If you don't have an account, click 'CREATE ACCOUNT' and come     on back to step 3.
 ## Troubleshooting
 
 Scenario: It says my project doesn't exist...
