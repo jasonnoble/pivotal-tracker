@@ -13,7 +13,7 @@ FactoryGirl.define do
     personal_settings             ({})
     project_ids                   ["#{ENV['PROJECT_ID']}"]
     receives_in_app_notifications true
-    time_zone                     { Time.zone.now }
+    time_zone                     { Time.now.zone }
     updated_at                    DateTime.now
     username                      { Faker::Internet.user_name }
     workspace_ids                 [1,2]
