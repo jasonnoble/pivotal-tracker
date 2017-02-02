@@ -13,6 +13,7 @@ PivotalTracker.autoload :ProjectWorkspace,  'pivotal-tracker/project_workspace'
 PivotalTracker.autoload :Resource,          'pivotal-tracker/resource'
 PivotalTracker.autoload :JiraIntegration, 'pivotal-tracker/jira_integration'
 PivotalTracker.autoload :Me,                'pivotal-tracker/me'
+PivotalTracker.autoload :MembershipSummary, 'pivotal-tracker/membership_summary'
 
 class PivotalTracker
   include HTTParty
