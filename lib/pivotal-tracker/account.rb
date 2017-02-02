@@ -9,16 +9,9 @@ class PivotalTracker::Account < PivotalTracker::Resource
       parsed_response = response.parsed_response
       PivotalTracker::Account.new(parsed_response)
     end
-  end
-
-  def memberships
-    response = PivotalTracker.get("/accounts/#{self.id}/memberships")
-    if response.code == 200
-      response.parsed_response.map do |membership|
-        PivotalTracker::AccountMembership.new(membership)
-      end
-    else
-      raise(PivotalTracker::PermissionDenied, "Only Admins and Owners can see account memberships")
-    end
-  end
+  end		
+		
+  def memberships		
+    @memberships ||= PivotalTracker::Proxy.new(self, PivotalTracker::AccountMembership)
+  end		
 end
