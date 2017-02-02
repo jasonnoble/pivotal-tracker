@@ -65,3 +65,15 @@ RSpec.configure do |config|
     FactoryGirl.find_definitions
   end
 end
+
+RSpec.shared_examples "an API backed model" do
+  it 'stores the attributes from the API' do
+    attributes.each do |attribute, value|
+      expect(subject.send(attribute)).to eq(value)
+    end
+  end
+
+  it 'is an instance of API backed model' do
+    expect(subject).to be_a(model)
+  end
+end
