@@ -12,6 +12,11 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = 'random'
+
+  config.before(:suite) do
+    env_keys = File.readlines('.env.example').map { |var| var.split('=').first }.reject { |key| ENV[key] }
+    raise(ArgumentError, "One or more of your environment variables aren't setup: #{env_keys.join(',')}\nPlease see Contributing.md for details") if env_keys.any?
+  end
 end
 
 # VCR Config
