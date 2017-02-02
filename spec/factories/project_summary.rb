@@ -2,10 +2,10 @@ require './lib/pivotal-tracker/project_summary'
 
 FactoryGirl.define do
   factory :project_summary, class: PivotalTracker::ProjectSummary do
-    id 1
-    name 'name'
-    role 'owner'
+    id             1
+    name           { Faker::Name.name}
+    role           { Faker::Name.name }
     last_viewed_at DateTime.now
-    kind 'project_summary'
+    kind           'project_summary'
   end
 end
