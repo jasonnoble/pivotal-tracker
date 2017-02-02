@@ -1,5 +1,3 @@
-require './lib/pivotal-tracker/resource'
-
 class PivotalTracker::Iteration < PivotalTracker::Resource
 
   attr_accessor :accepted, :accepted_points, :analytics, :created,
