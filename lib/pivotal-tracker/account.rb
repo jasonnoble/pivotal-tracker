@@ -4,14 +4,11 @@ class PivotalTracker::Account < PivotalTracker::Resource
                 :status, :updated_at
 
   def self.find(account_id)
-    response = PivotalTracker.get("/accounts/#{account_id}")
-    if response.code == 200
-      parsed_response = response.parsed_response
-      PivotalTracker::Account.new(parsed_response)
-    end
-  end		
-		
-  def memberships		
+    parsed_response = PivotalTracker::ApiService.find('accounts', account_id)
+    new(parsed_response) if parsed_response
+  end
+
+  def memberships
     @memberships ||= PivotalTracker::Proxy.new(self, PivotalTracker::AccountMembership)
-  end		
+  end
 end

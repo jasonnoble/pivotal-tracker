@@ -5,22 +5,14 @@ class PivotalTracker::AccountMembership < PivotalTracker::Resource
                 :timekeeper, :updated_at
 
   def self.all(account_id)
-    response = PivotalTracker.get("/accounts/#{account_id}/memberships")		
-    if response.code == 200		
-      response.parsed_response.map do |membership|		
-        PivotalTracker::AccountMembership.new(membership)		
-      end		
-    else		
-      raise(PivotalTracker::PermissionDenied, "Only Admins and Owners can see account memberships")		
-    end		
+    memberships = PivotalTracker::ApiService.account_memberships(account_id)
+    memberships.map do |membership|
+      PivotalTracker::AccountMembership.new(membership)
+    end
   end
 
   def self.create(membership_attributes, account_id)
-    response = PivotalTracker.post("/accounts/#{account_id}/memberships", query: membership_attributes)
-    if response.code == 200
-      new_account = PivotalTracker::AccountMembership.new(response.parsed_response)
-    else
-      raise(PivotalTracker::PermissionDenied, "Only Admins and Owners can add account memberships")
-    end
+    new_membership = PivotalTracker::ApiService.create_account_membership(membership_attributes, account_id)
+    PivotalTracker::AccountMembership.new(new_membership)
   end
 end
