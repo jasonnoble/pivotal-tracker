@@ -1,13 +1,7 @@
-class PivotalTracker::Account
+class PivotalTracker::Account < PivotalTracker::Resource
   attr_accessor :created_at, :days_left, :id, :kind,
                 :name, :over_the_limit, :plan, :project_ids,
                 :status, :updated_at
-
-  def initialize(account_attributes)
-    account_attributes.each do |attribute, value|
-      self.send(:"#{attribute}=", value)
-    end
-  end
 
   def self.find(account_id)
     response = PivotalTracker.get("/accounts/#{account_id}")
