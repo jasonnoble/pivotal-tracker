@@ -1,15 +1,13 @@
-require './lib/pivotal_tracker'
+require './lib/pivotal-tracker/me'
 
 FactoryGirl.define do
-  skip_create
-  
   factory :me, class: PivotalTracker::Me do
     api_token '0'
     created_at DateTime.now
-    email 'example@example.com'
+    email { Faker::Internet.email(name) }
     has_google_identity true
     id 1
-    initals "FL"
+    initials { name.split.map{|name| name[0] } }
     kind "me"
     name "username"
     personal_settings ({})
@@ -19,7 +17,5 @@ FactoryGirl.define do
     updated_at DateTime.now
     username "username"
     workspace_ids [1,2]
-
-    initialize_with { new(attributes) }
   end
 end

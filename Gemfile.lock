@@ -99,7 +99,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  factory_girl (~> 4.0)
+  factory_girl
   faker
   guard-rspec
   httparty

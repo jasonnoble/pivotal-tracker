@@ -1,15 +1,9 @@
 require 'spec_helper'
 
 describe PivotalTracker::ProjectSnapshot do
-  context '#new' do
-    it 'initializes with attributes' do
-      project_snapshot = create(:project_snapshot)
-
-      expect(project_snapshot).to be_a PivotalTracker::ProjectSnapshot
-
-      FactoryGirl.attributes_for(:project_snapshot).each do |attribute, value|
-        expect(project_snapshot.send(attribute)).to eq value
-      end
-    end
+  it_behaves_like "an API backed model" do
+    let(:attributes) { FactoryGirl.attributes_for(:project_snapshot) }
+    let(:subject) { PivotalTracker::ProjectSnapshot.new(attributes) }
+    let(:model) { PivotalTracker::ProjectSnapshot }
   end
 end

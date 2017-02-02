@@ -1,8 +1,6 @@
 require './lib/pivotal_tracker'
 
 FactoryGirl.define do
-  skip_create
-
   factory :iteration, class: PivotalTracker::Iteration do
     number 1
     project_id 1
@@ -19,7 +17,5 @@ FactoryGirl.define do
     created []
     analytics []
     kind 'kind'
-
-    initialize_with { new(attributes) }
   end
 end

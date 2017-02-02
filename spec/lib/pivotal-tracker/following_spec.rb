@@ -1,15 +1,9 @@
 require 'spec_helper'
 
 describe PivotalTracker::Following do
-  context '#new' do
-    it 'initializes with attributes' do
-      following = create(:following)
-
-      expect(following).to be_a PivotalTracker::Following
-
-      FactoryGirl.attributes_for(:following).each do |attribute, value|
-        expect(following.send(attribute)).to eq value
-      end
-    end
+  it_behaves_like "an API backed model" do
+    let(:attributes) { FactoryGirl.attributes_for(:following) }
+    let(:subject) { PivotalTracker::Following.new(attributes) }
+    let(:model) { PivotalTracker::Following }
   end
 end

@@ -1,14 +1,9 @@
 require 'spec_helper'
 
 describe PivotalTracker::Iteration do
-  context '#new' do
-    it 'initializes with attributes' do
-      iteration = create(:iteration)
-
-      expect(iteration).to be_a PivotalTracker::Iteration
-      FactoryGirl.attributes_for(:iteration).each do |attribute, value|
-        expect(iteration.send(attribute)).to eq value
-      end
-    end
+  it_behaves_like "an API backed model" do
+    let(:attributes) { FactoryGirl.attributes_for(:iteration) }
+    let(:subject) { PivotalTracker::Iteration.new(attributes) }
+    let(:model) { PivotalTracker::Iteration }
   end
 end

@@ -1,14 +1,9 @@
 require 'spec_helper'
 
 describe PivotalTracker::MembershipSummary do
-  describe '#new' do
-    it 'initializes with valid attributes' do
-
-      membership_summary = create(:membership_summary)
-
-      FactoryGirl.attributes_for(:membership_summary).each do |attribute, value|
-        expect(membership_summary.send(attribute)).to eq(value)
-      end
-    end
+  it_behaves_like "an API backed model" do
+    let(:attributes) { FactoryGirl.attributes_for(:membership_summary) }
+    let(:subject) { PivotalTracker::MembershipSummary.new(attributes) }
+    let(:model) { PivotalTracker::MembershipSummary }
   end
 end

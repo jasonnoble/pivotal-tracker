@@ -1,16 +1,9 @@
 require 'spec_helper'
 
 describe PivotalTracker::JiraIntegration do
-  describe ".new" do
-    it "can initialize an instance with attributes" do
-
-      jira_integration = create(:jira_integration)
-
-      expect(jira_integration).to be_a PivotalTracker::JiraIntegration
-
-      FactoryGirl.attributes_for(:jira_integration).each do |attribute, value|
-        expect(jira_integration.send(attribute)).to eq(value)
-      end
-    end
+  it_behaves_like "an API backed model" do
+    let(:attributes) { FactoryGirl.attributes_for(:jira_integration) }
+    let(:subject) { PivotalTracker::JiraIntegration.new(attributes) }
+    let(:model) { PivotalTracker::JiraIntegration }
   end
 end

@@ -1,15 +1,9 @@
 require 'spec_helper'
 
 describe PivotalTracker::Me do
-  describe "#new" do
-    it "initializes with valid attributes" do
-      me = create(:me)
-
-      expect(me).to be_a(PivotalTracker::Me)
-
-      FactoryGirl.attributes_for(:me).each do |attribute, value|
-        expect(me.send(attribute)).to eq(value)
-      end
-    end
+  it_behaves_like "an API backed model" do
+    let(:attributes) { FactoryGirl.attributes_for(:me) }
+    let(:subject) { PivotalTracker::Me.new(attributes) }
+    let(:model) { PivotalTracker::Me }
   end
 end

@@ -1,8 +1,6 @@
 require './lib/pivotal_tracker'
 
 FactoryGirl.define do
-  skip_create
-
   factory :jira_integration, class: PivotalTracker::JiraIntegration do
     active true
     api_username 'hello'
@@ -20,7 +18,5 @@ FactoryGirl.define do
     updated_at Time.now
     update_comments true
     update_state true
-
-    initialize_with { new(attributes) }
   end
 end
