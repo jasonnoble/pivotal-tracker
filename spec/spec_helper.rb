@@ -1,3 +1,6 @@
+require 'simplecov'
+SimpleCov.start
+
 require 'vcr'
 require 'pivotal_tracker'
 require 'dotenv/load'

@@ -15,4 +15,5 @@ group :test do
   gem 'rake'
   gem 'pry'
   gem 'faker'
+  gem 'simplecov', :require => false
 end
