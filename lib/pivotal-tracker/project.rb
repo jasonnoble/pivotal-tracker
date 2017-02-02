@@ -1,4 +1,4 @@
-class PivotalTracker::Project
+class PivotalTracker::Project < PivotalTracker::Resource
   attr_accessor :account_id, :atom_enabled, :automatic_planning,
                 :bugs_and_chores_are_estimatable, :created_at,
                 :current_iteration_number, :description, :enable_following,
@@ -17,12 +17,6 @@ class PivotalTracker::Project
     if response.code == 200
       parsed_response = response.parsed_response
       PivotalTracker::Project.new(parsed_response)
-    end
-  end
-
-  def initialize(project_attributes)
-    project_attributes.each do |attribute, value|
-      self.send(:"#{attribute}=", value)
     end
   end
 
