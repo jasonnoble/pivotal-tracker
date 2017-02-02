@@ -1,5 +1,3 @@
-require './lib/pivotal-tracker/resource'
-
 class PivotalTracker::Account < PivotalTracker::Resource
   attr_accessor :created_at, :days_left, :id, :kind,
                 :name, :over_the_limit, :plan, :project_ids,
