@@ -4,8 +4,8 @@ class PivotalTracker::Account < PivotalTracker::Resource
                 :status, :updated_at
 
   def self.find(account_id)
-    parsed_response = PivotalTracker::ApiService.find('accounts', account_id)
-    new(parsed_response) if parsed_response
+    raw_account = PivotalTracker::ApiService.find('accounts', account_id)
+    new(raw_account) if raw_account
   end
 
   def memberships

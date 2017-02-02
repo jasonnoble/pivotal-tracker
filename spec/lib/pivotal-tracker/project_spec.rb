@@ -47,11 +47,11 @@ describe PivotalTracker::Project do
     end
   end
 
-  describe ".stories" do
+  describe ".stories.all" do
     let(:project) { subject.find(ENV['PROJECT_ID']) }
 
     it "returns an array of stories" do
-      stories = project.stories
+      stories = project.stories.all
       expect(stories).to be_an(Array)
       stories.each do |story|
         expect(story).to be_a(PivotalTracker::Story)

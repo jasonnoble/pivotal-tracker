@@ -3,8 +3,7 @@ class PivotalTracker::Client
     if username.nil? || password.nil?
       @token
     else
-      PivotalTracker.basic_auth username, password
-      self.token = PivotalTracker.get('/me')['api_token']
+      self.token = PivotalTracker::ApiService.get_token(username, password)
     end
   end
 
