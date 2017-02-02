@@ -24,4 +24,5 @@ PivotalTracker.autoload :Following,         'pivotal-tracker/following'
 PivotalTracker.autoload :Iteration,         'pivotal-tracker/iteration'
 PivotalTracker.autoload :AccountMembership, 'pivotal-tracker/account_membership'		
 PivotalTracker.autoload :Proxy,             'pivotal-tracker/proxy'
+PivotalTracker.autoload :Notification,      'pivotal-tracker/notification'
 
