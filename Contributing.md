@@ -34,3 +34,17 @@ PIVOTAL_PROJECT_ID='9_YOUR_PROJECT_ID_2'
    1. Click your username dropdown on the top right of the screen (https://www.pivotaltracker.com/dashboard).
    2. Click 'Profile'
    3. Your API token is at the bottom of the list. Copy it for your `.env` file.
+
+## Troubleshooting
+
+Scenario: It says my project doesn't exist...
+* Delete your project cassette `rm ./spec/fixtures/pivotal_tracker_cassettes/project.yml`
+* Make sure your project id is for a project that exists
+* If you changed your password, make sure to update `PIVOTAL_USER_PASSWORD` and `PIVOTAL_TOKEN_ID` in your `.env` file.
+  * Note - if authenticating through Google, you will have to set a new Pivotal Tracker password.
+
+Scenario: It says something else related to my pivotal tracker doesn't exist...
+* If you are 100% confident in your code, the error is likely cassette related.
+* Follow similar steps from the scenario above and make sure your ENV variables are up to date and accurate.
+
+And of course, if you find something we haven't, let us know about it. Thanks!
