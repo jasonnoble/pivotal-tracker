@@ -31,4 +31,3 @@ PivotalTracker.autoload :IterationOverride, 'pivotal-tracker/iteration_override'
 PivotalTracker.autoload :Integration,       'pivotal-tracker/integration'
 PivotalTracker.autoload :Follower,          'pivotal-tracker/follower'
 PivotalTracker.autoload :FileAttachment,    'pivotal-tracker/file_attachment'
-
