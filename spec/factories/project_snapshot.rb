@@ -1,11 +1,11 @@
-require './lib/pivotal_tracker'
+require './lib/pivotal-tracker/project_snapshot'
 
 FactoryGirl.define do
   factory :project_snapshot, class: PivotalTracker::ProjectSnapshot do
-    date Time.now
+    date    DateTime.now
     current []
     backlog []
-    icebox []
-    kind 'kind'
+    icebox  []
+    kind    'project_snapshot'
   end
 end
