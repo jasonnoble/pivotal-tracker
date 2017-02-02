@@ -2,21 +2,21 @@ require './lib/pivotal_tracker'
 
 FactoryGirl.define do
   factory :jira_integration, class: PivotalTracker::JiraIntegration do
-    active true
-    api_username 'hello'
-    api_password 'password'
-    base_url '/'
-    can_import true
-    created_at Time.now
-    filter_id '1'
-    id 1
-    is_other true
-    kind 'kind'
-    name 'name'
-    project_id 1
-    story_name 'story'
-    updated_at Time.now
+    active          true
+    api_username    { Faker::Internet.user_name }
+    api_password    { Faker::Internet.password }
+    base_url        { Faker::Internet.url }
+    can_import      true
+    created_at      DateTime.now
+    filter_id       '1'
+    id              1
+    is_other        true
+    kind            'jira_integration'
+    name            { Faker::Name.name }
+    project_id      1
+    story_name      'story name'
+    updated_at      DateTime.now
     update_comments true
-    update_state true
+    update_state    true
   end
 end
