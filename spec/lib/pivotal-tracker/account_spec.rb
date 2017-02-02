@@ -50,7 +50,7 @@ describe PivotalTracker::Account do
     end
 
     it "can add a new membership" do
-      membership_params = {:email => Faker::Internet.email, :name => Faker::Name.name, :initials => "AW"}
+      membership_params = {:email => 'laney.hoeger@senger.name', :name => 'Larue Mohr', :initials => 'LM'}
       new_membership = (account.memberships.create(membership_params))
 
       expect(new_membership).to be_a(PivotalTracker::AccountMembership)
