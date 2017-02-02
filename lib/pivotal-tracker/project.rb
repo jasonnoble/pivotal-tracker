@@ -9,25 +9,16 @@ class PivotalTracker::Project < PivotalTracker::Resource
                 :public, :start_date, :start_time, :time_zone, :updated_at,
                 :velocity_averaged_over, :version, :week_start_day
   def self.all
-    PivotalTracker.get('/projects').parsed_response.map{|project| PivotalTracker::Project.new(project) }
+    raw_projects = PivotalTracker::ApiService.all('projects')
+    raw_projects.map { |project| new(project) }
   end
 
   def self.find(project_id)
-    response = PivotalTracker.get("/projects/#{project_id}")
-    if response.code == 200
-      parsed_response = response.parsed_response
-      PivotalTracker::Project.new(parsed_response)
-    end
+    raw_project = PivotalTracker::ApiService.find('projects', project_id)
+    new(raw_project) if raw_project
   end
 
   def stories
-    response = PivotalTracker.get("/projects/#{self.id}/stories")
-    if response.code == 200
-      response.parsed_response.map do |story|
-        PivotalTracker::Story.new(story)
-      end
-    else
-      puts response.inspect
-    end
+    @stories ||= PivotalTracker::Proxy.new(self, PivotalTracker::Story)
   end
 end

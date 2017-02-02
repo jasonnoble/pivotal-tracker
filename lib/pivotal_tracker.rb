@@ -1,16 +1,10 @@
-require 'httparty'
-
-class PivotalTracker
-  include HTTParty
-
-  base_uri 'https://www.pivotaltracker.com/services/v5'
-
-  PermissionDenied = Class.new(Error)
+module PivotalTracker
 end
 
 PivotalTracker.autoload :Account,                    'pivotal-tracker/account'
 PivotalTracker.autoload :AccountMembership,          'pivotal-tracker/account_membership'
 PivotalTracker.autoload :AccountMembership,          'pivotal-tracker/account_membership'
+PivotalTracker.autoload :ApiService,                 'pivotal-tracker/api_service'
 PivotalTracker.autoload :Client,                     'pivotal-tracker/client'
 PivotalTracker.autoload :ExternalStory,              'pivotal-tracker/external_story'
 PivotalTracker.autoload :FileAttachment,             'pivotal-tracker/file_attachment'

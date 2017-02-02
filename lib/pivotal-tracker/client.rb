@@ -3,17 +3,16 @@ class PivotalTracker::Client
     if username.nil? || password.nil?
       @token
     else
-      PivotalTracker.basic_auth username, password
-      self.token = PivotalTracker.get('/me')['api_token']
+      self.token = PivotalTracker::ApiService.get_token(username, password)
     end
   end
 
   def self.token=(token)
     @token = token
     if token.nil?
-      PivotalTracker.default_options[:headers] && PivotalTracker.default_options[:headers].delete("X-TrackerToken")
+      PivotalTracker::ApiService.default_options[:headers] && PivotalTracker::ApiService.default_options[:headers].delete("X-TrackerToken")
     else
-      PivotalTracker.headers "X-TrackerToken" => token
+      PivotalTracker::ApiService.headers "X-TrackerToken" => token
     end
   end
 end

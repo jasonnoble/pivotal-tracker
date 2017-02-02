@@ -1,8 +1,8 @@
 class PivotalTracker::Proxy
   attr_reader :owner, :target
 
-  def initialize(owner, target) 
-    @owner = owner
+  def initialize(owner, target)
+    @owner  = owner
     @target = target
   end
 

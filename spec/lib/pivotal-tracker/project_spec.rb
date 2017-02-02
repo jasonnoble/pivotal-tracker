@@ -41,17 +41,17 @@ describe PivotalTracker::Project do
     context "with an invalid project id" do
       let(:project_id) { 123456789123456789 }
 
-      it "returns nil" do
-        expect(project).to be_nil
+      it "returns an error" do
+        expect { project }.to raise_error PivotalTracker::ApiService::InvalidRequest
       end
     end
   end
 
-  describe ".stories" do
+  describe ".stories.all" do
     let(:project) { subject.find(ENV['PROJECT_ID']) }
 
     it "returns an array of stories" do
-      stories = project.stories
+      stories = project.stories.all
       expect(stories).to be_an(Array)
       stories.each do |story|
         expect(story).to be_a(PivotalTracker::Story)

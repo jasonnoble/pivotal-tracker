@@ -1,6 +1,6 @@
-require "spec_helper"
+require 'spec_helper'
 
-describe PivotalTracker do
+describe PivotalTracker::ApiService do
   describe "default attributes" do
     it "includes HTTParty" do
       expect(subject.class.ancestors).to include(HTTParty)
@@ -22,7 +22,7 @@ describe PivotalTracker do
     end
 
     it "records the fixture" do
-      PivotalTracker.get('/me')
+      PivotalTracker::ApiService.get('/me')
     end
   end
 end
