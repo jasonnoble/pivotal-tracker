@@ -32,3 +32,4 @@ PivotalTracker.autoload :Integration,                'pivotal-tracker/integratio
 PivotalTracker.autoload :Follower,                   'pivotal-tracker/follower'
 PivotalTracker.autoload :FileAttachment,             'pivotal-tracker/file_attachment'
 PivotalTracker.autoload :GetSatisfactionIntegration, 'pivotal-tracker/get_satisfaction_integration'
+PivotalTracker.autoload :ExternalStory,              'pivotal-tracker/external_story'
