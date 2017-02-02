@@ -1,8 +1,6 @@
-require './lib/pivotal_tracker'
+require './lib/pivotal-tracker/google_attachment'
 
 FactoryGirl.define do
-  skip_create
-
   factory :google_attachment, class: PivotalTracker::GoogleAttachment do
     id    1
     comment_id 1
@@ -13,7 +11,5 @@ FactoryGirl.define do
     alternate_link 'string'
     resource_id 'string'
     kind 'string'
-
-    initialize_with { new(attributes) }
   end
 end
