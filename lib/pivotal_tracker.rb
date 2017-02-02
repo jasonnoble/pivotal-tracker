@@ -26,4 +26,5 @@ PivotalTracker.autoload :AccountMembership, 'pivotal-tracker/account_membership'
 PivotalTracker.autoload :Proxy,             'pivotal-tracker/proxy'
 PivotalTracker.autoload :Notification,      'pivotal-tracker/notification'
 PivotalTracker.autoload :OtherIntegration,  'pivotal-tracker/other_integration'
+PivotalTracker.autoload :ProjectSummary,    'pivotal-tracker/project_summary'
 
