@@ -12,6 +12,11 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = 'random'
+
+  config.before(:suite) do
+    env_keys = %w(PIVOTAL_TOKEN_ID PIVOTAL_EMAIL PIVOTAL_USER_NAME PIVOTAL_USER_PASSWORD PROJECT_ID PIVOTAL_ACCOUNT_ID).select{|key| ENV[key].nil? }
+    raise(ArgumentError, "One or more of your environment variables aren't setup: #{env_keys.join(',')}\nPlease see Contributing.md for details") if env_keys.any?
+  end
 end
 
 # VCR Config
