@@ -67,6 +67,9 @@ RSpec.configure do |config|
 end
 
 RSpec.shared_examples "an API backed model" do
+
+  let(:subject) { model.new(attributes) }
+  
   it 'stores the attributes from the API' do
     attributes.each do |attribute, value|
       expect(subject.send(attribute)).to eq(value)
