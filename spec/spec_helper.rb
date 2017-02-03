@@ -6,6 +6,7 @@ require 'pivotal_tracker'
 require 'dotenv/load'
 require 'pry'
 require 'faker'
+require 'factory_girl'
 
 RSpec.configure do |config|
   config.run_all_when_everything_filtered = true
@@ -55,4 +56,27 @@ end
 
 def set_token
   PivotalTracker::Client.token = ENV['PIVOTAL_TOKEN_ID']
+end
+
+RSpec.configure do |config|
+  config.include FactoryGirl::Syntax::Methods
+
+  config.before(:suite) do
+    FactoryGirl.find_definitions
+  end
+end
+
+RSpec.shared_examples "an API backed model" do
+
+  let(:subject) { model.new(attributes) }
+  
+  it 'stores the attributes from the API' do
+    attributes.each do |attribute, value|
+      expect(subject.send(attribute)).to eq(value)
+    end
+  end
+
+  it 'is an instance of API backed model' do
+    expect(subject).to be_a(model)
+  end
 end

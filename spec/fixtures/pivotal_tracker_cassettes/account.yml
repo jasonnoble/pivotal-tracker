@@ -183,7 +183,7 @@ http_interactions:
       encoding: UTF-8
       string: '[{"kind":"account_membership","id":2411963,"person":{"kind":"person","id":2411963,"name":"Ann
         Wolff","email":"<PIVOTAL_EMAIL_ADDRESS>","initials":"AW","username":"<PIVOTAL_USER_NAME>"},"account_id":962655,"created_at":"2017-01-30T20:49:33Z","updated_at":"2017-01-30T20:49:33Z","owner":true,"admin":false,"project_creator":false,"timekeeper":true,"time_enterer":false},{"kind":"account_membership","id":2413547,"person":{"kind":"person","id":2413547,"name":"Lucy
-        Conklin","email":"lucy.conklin@gmail.com","initials":"LC","username":"lucyconklin"},"account_id":962655,"created_at":"2017-02-01T00:38:47Z","updated_at":"2017-02-01T00:38:47Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false},{"kind":"account_membership","id":2509967,"person":{"kind":"person","id":2509967,"name":"Mr.
+        Conklin","email":"<PIVOTAL_EMAIL_ADDRESS>","initials":"LC","username":"<PIVOTAL_USER_NAME>"},"account_id":962655,"created_at":"2017-02-01T00:38:47Z","updated_at":"2017-02-01T00:38:47Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false},{"kind":"account_membership","id":2509967,"person":{"kind":"person","id":2509967,"name":"Mr.
         Chelsie Borer","email":"mozell.funk@mrazfadel.com","initials":"LC","username":"mrchelsie"},"account_id":962655,"created_at":"2017-02-01T22:10:17Z","updated_at":"2017-02-01T22:10:17Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false},{"kind":"account_membership","id":2510209,"person":{"kind":"person","id":2510209,"name":"Yvette
         Morar","email":"garrick.goodwin@kuhlman.name","initials":"LC","username":"yvettemorar"},"account_id":962655,"created_at":"2017-02-01T22:20:06Z","updated_at":"2017-02-01T22:20:06Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false},{"kind":"account_membership","id":2510905,"person":{"kind":"person","id":2510905,"name":"Evans
         Koss","email":"jerald_brown@klingjenkins.io","initials":"AW","username":"evansk"},"account_id":962655,"created_at":"2017-02-01T23:43:58Z","updated_at":"2017-02-01T23:43:58Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false}]'
@@ -311,4 +311,555 @@ http_interactions:
         Prohaska","email":"jacques@cronin.com","initials":"AW","username":"hazlep"},"account_id":962655,"created_at":"2017-02-01T23:47:32Z","updated_at":"2017-02-01T23:47:32Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false}'
     http_version: 
   recorded_at: Wed, 01 Feb 2017 23:47:32 GMT
+- request:
+    method: get
+    uri: https://www.pivotaltracker.com/services/v5/accounts/962663
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+      Authorization:
+      - Basic bHVjeWNvbmtsaW46UG9uaWV6NDQ0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Feb 2017 20:26:06 GMT
+      Etag:
+      - '"a95ec38b61bb52cfb7f85193efe21ce3"'
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 161247d9401f0fa9dc2bba37032d3c4f
+      X-Runtime:
+      - '0.147671'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - dd8d4749-0142-42a8-43fa-085fb5e77faa
+      Content-Length:
+      - '172'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"kind":"account","id":962663,"name":"Turing School","plan":"Free","status":"active","days_left":27,"created_at":"2017-01-30T21:09:30Z","updated_at":"2017-01-30T21:09:30Z"}'
+    http_version: 
+  recorded_at: Thu, 02 Feb 2017 20:26:06 GMT
+- request:
+    method: get
+    uri: https://www.pivotaltracker.com/services/v5/accounts/962663/memberships
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+      Authorization:
+      - Basic bHVjeWNvbmtsaW46UG9uaWV6NDQ0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Feb 2017 20:26:06 GMT
+      Etag:
+      - '"d0b93c255a693c4646d85eb3e15e5e86"'
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 931ef8c584df8162a86adb850d38edd4
+      X-Runtime:
+      - '0.038693'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - 9713b939-10ca-4293-59c2-c5d5916840f4
+      Content-Length:
+      - '1079'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"kind":"account_membership","id":2413547,"person":{"kind":"person","id":2413547,"name":"Lucy
+        Conklin","email":"<PIVOTAL_EMAIL_ADDRESS>","initials":"LC","username":"<PIVOTAL_USER_NAME>"},"account_id":962663,"created_at":"2017-01-30T21:09:30Z","updated_at":"2017-01-30T21:09:30Z","owner":true,"admin":false,"project_creator":false,"timekeeper":true,"time_enterer":false},{"kind":"account_membership","id":2547831,"person":{"kind":"person","id":2547831,"name":"Jordyn
+        Jacobi I","email":"kenny@torphy.name","initials":"AW","username":"jordynj"},"account_id":962663,"created_at":"2017-02-02T17:59:22Z","updated_at":"2017-02-02T17:59:22Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false},{"kind":"account_membership","id":2547835,"person":{"kind":"person","id":2547835,"name":"Grady
+        Weber","email":"jo.abernathy@johns.co","initials":"AW","username":"gradyweber"},"account_id":962663,"created_at":"2017-02-02T18:01:37Z","updated_at":"2017-02-02T18:01:37Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false}]'
+    http_version: 
+  recorded_at: Thu, 02 Feb 2017 20:26:06 GMT
+- request:
+    method: post
+    uri: https://www.pivotaltracker.com/services/v5/accounts/962663/memberships?email=haley.gutmann@veum.biz&initials=AW&name=Mrs.%20Mia%20Bergstrom
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+      Authorization:
+      - Basic bHVjeWNvbmtsaW46UG9uaWV6NDQ0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Feb 2017 20:26:07 GMT
+      Etag:
+      - '"5b18c54912421640ea3ea1074f2a84d3"'
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 8cca6af1735083de3646a65f8443af98
+      X-Runtime:
+      - '0.150197'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - 08a35173-d55e-41c9-6250-e1817f6e892a
+      Content-Length:
+      - '363'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"kind":"account_membership","id":1468819,"person":{"kind":"person","id":2548035,"name":"Mrs.
+        Mia Bergstrom","email":"haley.gutmann@veum.biz","initials":"AW","username":"mrsmia"},"account_id":962663,"created_at":"2017-02-02T20:26:07Z","updated_at":"2017-02-02T20:26:07Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false}'
+    http_version: 
+  recorded_at: Thu, 02 Feb 2017 20:26:07 GMT
+- request:
+    method: post
+    uri: https://www.pivotaltracker.com/services/v5/accounts/962663/memberships?email=marietta@christiansen.io&initials=AW&name=Elva%20Mayert
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Feb 2017 20:26:29 GMT
+      Etag:
+      - '"ddf5db5d558618a6478b3da1ce602e2e"'
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - d67363a681e93b18ac3cad1d6464ec24
+      X-Runtime:
+      - '0.171836'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - e4180126-59b1-4c66-6921-fc91b7ac959e
+      Content-Length:
+      - '357'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"kind":"account_membership","id":1468821,"person":{"kind":"person","id":2548037,"name":"Elva
+        Mayert","email":"marietta@christiansen.io","initials":"AW","username":"elvam"},"account_id":962663,"created_at":"2017-02-02T20:26:29Z","updated_at":"2017-02-02T20:26:29Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false}'
+    http_version: 
+  recorded_at: Thu, 02 Feb 2017 20:26:29 GMT
+- request:
+    method: post
+    uri: https://www.pivotaltracker.com/services/v5/accounts/962663/memberships?email=rosalinda_casper@goldnerrau.io&initials=AW&name=Janet%20Wolf%20III
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+      Authorization:
+      - Basic bHVjeWNvbmtsaW46UG9uaWV6NDQ0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Feb 2017 20:26:58 GMT
+      Etag:
+      - '"7c67413ed1c6fe5f234cbe62c6f6ac7e"'
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 4c422eb7e79003b4566ecd65e63e23b1
+      X-Runtime:
+      - '0.160044'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - 77c3ff50-c322-4945-42f8-9319f652a2bb
+      Content-Length:
+      - '370'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"kind":"account_membership","id":1468825,"person":{"kind":"person","id":2548039,"name":"Janet
+        Wolf III","email":"rosalinda_casper@goldnerrau.io","initials":"AW","username":"janetwolf"},"account_id":962663,"created_at":"2017-02-02T20:26:58Z","updated_at":"2017-02-02T20:26:58Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false}'
+    http_version: 
+  recorded_at: Thu, 02 Feb 2017 20:26:58 GMT
+- request:
+    method: post
+    uri: https://www.pivotaltracker.com/services/v5/accounts/962663/memberships?email=guido_herman@kuvalisbruen.co&initials=AW&name=Mrs.%20Benedict%20Rolfson
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Feb 2017 20:31:15 GMT
+      Etag:
+      - '"f9d1c32f46bff8c88ef915090e554bf7"'
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - d0e49c598b0d603dcff6a1cb5b7ea78c
+      X-Runtime:
+      - '0.117892'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - 06449a84-11ac-46e9-47b5-24bd938a8038
+      Content-Length:
+      - '370'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"kind":"account_membership","id":1468829,"person":{"kind":"person","id":2548043,"name":"Mrs.
+        Benedict Rolfson","email":"guido_herman@kuvalisbruen.co","initials":"AW","username":"mrsb"},"account_id":962663,"created_at":"2017-02-02T20:31:15Z","updated_at":"2017-02-02T20:31:15Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false}'
+    http_version: 
+  recorded_at: Thu, 02 Feb 2017 20:31:15 GMT
+- request:
+    method: post
+    uri: https://www.pivotaltracker.com/services/v5/accounts/962663/memberships?email=gregorio.heathcote@ruel.co&initials=AW&name=Violet%20Gerhold%20PhD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Feb 2017 20:33:52 GMT
+      Etag:
+      - '"aac1829a093592c2b7fc9e098cad30a5"'
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - fa01d55a36e4c685e891b3445827d1e1
+      X-Runtime:
+      - '0.107103'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - 43ba1532-7ab9-4375-553f-e92cfb35d440
+      Content-Length:
+      - '374'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"kind":"account_membership","id":1468839,"person":{"kind":"person","id":2548055,"name":"Violet
+        Gerhold PhD","email":"gregorio.heathcote@ruel.co","initials":"AW","username":"violetgerhold"},"account_id":962663,"created_at":"2017-02-02T20:33:52Z","updated_at":"2017-02-02T20:33:52Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false}'
+    http_version: 
+  recorded_at: Thu, 02 Feb 2017 20:33:52 GMT
+- request:
+    method: post
+    uri: https://www.pivotaltracker.com/services/v5/accounts/962663/memberships?email=leslie.wyman@armstrong.net&initials=AW&name=Mr.%20Junior%20Olson
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+      Authorization:
+      - Basic bHVjeWNvbmtsaW46UG9uaWV6NDQ0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Feb 2017 20:52:40 GMT
+      Etag:
+      - '"f539bf3bafcb821aa624ca22e8fc1485"'
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - a99d3b6c0fb9b1ebc61ed31423817405
+      X-Runtime:
+      - '0.127529'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - 84d84f52-a5c0-4e23-6b1b-66b03cd3e9b1
+      Content-Length:
+      - '367'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"kind":"account_membership","id":1468873,"person":{"kind":"person","id":2548109,"name":"Mr.
+        Junior Olson","email":"leslie.wyman@armstrong.net","initials":"AW","username":"mrjunior"},"account_id":962663,"created_at":"2017-02-02T20:52:40Z","updated_at":"2017-02-02T20:52:40Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false}'
+    http_version: 
+  recorded_at: Thu, 02 Feb 2017 20:52:40 GMT
+- request:
+    method: post
+    uri: https://www.pivotaltracker.com/services/v5/accounts/962663/memberships?email=katelyn_wisozk@bogangerlach.io&initials=AW&name=Johnathan%20Langworth%20Jr.
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      X-Trackertoken:
+      - "<PIVOTAL_API_TOKEN>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Feb 2017 21:36:38 GMT
+      Etag:
+      - '"52c23f0cbb33345e67fc8f2e295b381c"'
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - b1ab34d888b8c787f897d38a9fe0ba91
+      X-Runtime:
+      - '0.185366'
+      X-Tracker-Client-Pinger-Interval:
+      - '20'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Vcap-Request-Id:
+      - 41e6513e-092e-49b1-49dc-19404e9bf51a
+      Content-Length:
+      - '388'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"kind":"account_membership","id":1468895,"person":{"kind":"person","id":2548149,"name":"Johnathan
+        Langworth Jr.","email":"katelyn_wisozk@bogangerlach.io","initials":"AW","username":"johnathanlangworth"},"account_id":962663,"created_at":"2017-02-02T21:36:38Z","updated_at":"2017-02-02T21:36:38Z","owner":false,"admin":false,"project_creator":false,"timekeeper":false,"time_enterer":false}'
+    http_version: 
+  recorded_at: Thu, 02 Feb 2017 21:36:38 GMT
 recorded_with: VCR 3.0.3
