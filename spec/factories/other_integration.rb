@@ -15,6 +15,6 @@ FactoryGirl.define do
     import_api_url      { Faker::Internet.url }
     basic_auth_username { Faker::Internet.user_name }
     basic_auth_password 'password'
-    kind                'kind'
+    kind                'other_integration'
   end
 end

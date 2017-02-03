@@ -16,6 +16,6 @@ FactoryGirl.define do
     created_at            DateTime.now
     updated_at            DateTime.now
     read_at               DateTime.now
-    kind                  'kind'
+    kind                  'notification'
   end
 end

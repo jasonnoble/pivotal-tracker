@@ -5,11 +5,11 @@ FactoryGirl.define do
     sequence(:id)
     comment_id     1
     person_id      1
-    google_kind    'string'
+    google_kind    'calendar#calendar'
     title          'string'
-    google_id      'string'
+    google_id      '/'
     alternate_link 'string'
     resource_id    'string'
-    kind           'string'
+    kind           'google_attachment'
   end
 end

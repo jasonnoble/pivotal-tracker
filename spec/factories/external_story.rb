@@ -16,6 +16,6 @@ FactoryGirl.define do
     owner_ids           [1,2]
     story_type          'type'
     extra               ({})
-    kind                'kind'
+    kind                'external_story'
   end
 end

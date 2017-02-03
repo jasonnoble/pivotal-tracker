@@ -14,6 +14,6 @@ FactoryGirl.define do
     updated_at    DateTime.now
     company       'company'
     product       'product'
-    kind          'kind'
+    kind          'get_satisfaction_integration'
   end
 end

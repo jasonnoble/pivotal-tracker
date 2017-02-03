@@ -7,6 +7,6 @@ FactoryGirl.define do
     email         { Faker::Internet.email }
     initials      { name.split.map{|name| name[0] } }
     username      { Faker::Internet.user_name }
-    kind          'kind'
+    kind          'follower'
   end
 end
