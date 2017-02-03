@@ -2,7 +2,7 @@ require './lib/pivotal-tracker/jira_integration'
 
 FactoryGirl.define do
   factory :jira_integration, class: PivotalTracker::JiraIntegration do
-    sequence(:id)   { |n| n }
+    sequence(:id)
     active          true
     api_username    { Faker::Internet.user_name }
     api_password    { Faker::Internet.password }

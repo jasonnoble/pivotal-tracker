@@ -2,7 +2,7 @@ require './lib/pivotal-tracker/label'
 
 FactoryGirl.define do
   factory :label, class: PivotalTracker::Label do
-    sequence(:id) { |n| n }
+    sequence(:id)
     counts        []
     created_at    DateTime.now
     kind          'label'

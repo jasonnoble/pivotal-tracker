@@ -2,7 +2,7 @@ require './lib/pivotal-tracker/project_workspace'
 
 FactoryGirl.define do
   factory :project_workspace, class: PivotalTracker::ProjectWorkspace do
-    sequence(:id) { |n| n }
+    sequence(:id)
     position_int  1
     project_id    1
     workspace_id  1

@@ -2,7 +2,7 @@ require './lib/pivotal-tracker/other_integration'
 
 FactoryGirl.define do
   factory :other_integration, class: PivotalTracker::OtherIntegration do
-    sequence(:id)       { |n| n }
+    sequence(:id)
     project_id          1
     can_import          true
     base_url            { Faker::Internet.url }

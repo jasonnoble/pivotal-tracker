@@ -2,7 +2,7 @@ require './lib/pivotal-tracker/me'
 
 FactoryGirl.define do
   factory :me, class: PivotalTracker::Me do
-    sequence(:id)                 { |n| n }
+    sequence(:id)
     api_token                     "0"
     created_at                    DateTime.now
     email                         { Faker::Internet.email(name) }

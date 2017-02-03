@@ -2,7 +2,7 @@ require './lib/pivotal-tracker/notification'
 
 FactoryGirl.define do
   factory :notification, class: PivotalTracker::Notification do
-    sequence(:id)         { |n| n }
+    sequence(:id)
     project_id            1
     performer_id          1
     message               'message'
