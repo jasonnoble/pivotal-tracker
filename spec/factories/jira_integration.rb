@@ -2,6 +2,7 @@ require './lib/pivotal-tracker/jira_integration'
 
 FactoryGirl.define do
   factory :jira_integration, class: PivotalTracker::JiraIntegration do
+    sequence(:id)   { |n| n }
     active          true
     api_username    { Faker::Internet.user_name }
     api_password    { Faker::Internet.password }
@@ -9,7 +10,6 @@ FactoryGirl.define do
     can_import      true
     created_at      DateTime.now
     filter_id       '1'
-    id              1
     is_other        true
     kind            'jira_integration'
     name            { Faker::Name.name }

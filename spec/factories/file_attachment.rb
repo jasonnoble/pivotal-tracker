@@ -2,7 +2,7 @@ require './lib/pivotal-tracker/file_attachment'
 
 FactoryGirl.define do
   factory :file_attachment, class: PivotalTracker::FileAttachment do
-    id            1
+    sequence(:id) { |n| n }
     filename      'filename'
     created_at    DateTime.now
     uploader_id   1

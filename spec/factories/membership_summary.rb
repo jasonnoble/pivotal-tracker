@@ -2,7 +2,7 @@ require './lib/pivotal-tracker/membership_summary'
 
 FactoryGirl.define do
   factory :membership_summary, class: PivotalTracker::MembershipSummary do
-    id             1
+    sequence(:id)  { |n| n }
     project_id     1
     project_name   { Faker::Name.name }
     project_color  { Faker::Color.color_name }
