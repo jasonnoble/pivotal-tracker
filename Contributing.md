@@ -39,17 +39,20 @@ PIVOTAL_PROJECT_ID='9_YOUR_PROJECT_ID_2'
   1. Click your username dropdown on the top right of the screen (https://www.pivotaltracker.com/dashboard).
   2. Click 'Accounts'
   3. If you have already created an account, click 'MANAGE ACCOUNT'
-  * Your account id is in the URL. E.g., "https://www.pivotaltracker.com/accounts/9_ACTUAL_ACCOUNT_ID_3/plans"
+  * Your account id is in the URL. E.g., `https://www.pivotaltracker.com/accounts/9_ACTUAL_ACCOUNT_ID_3/plans`
   4. If you don't have an account, click 'CREATE ACCOUNT' and come on back to step 3.
 
 ### To find your PROJECT_ID:
   1. Click your username dropdown on the top right of the screen (https://www.pivotaltracker.com/dashboard).
   2. Click 'Accounts'
   3. Click on one of your projects (either 'Accounts I Own' or 'Accounts I am a Member of').
-  * Your project id is in the URL. E.g., "https://www.pivotaltracker.com/n/projects/1_ACTUAL_PROJECT_ID_5"
+  * Your project id is in the URL. E.g., `https://www.pivotaltracker.com/n/projects/1_ACTUAL_PROJECT_ID_5`
   4. If you don't have an project, click 'CREATE PROJECT' and come on back to step 3.
 
 ## Troubleshooting
+
+Scenario: It says my environment variable are not set...
+* Make sure you have set all of the environment variables (see the top of this file for more information).
 
 Scenario: It says my project doesn't exist...
 * Delete your project cassette `rm ./spec/fixtures/pivotal_tracker_cassettes/project.yml`
