@@ -6,6 +6,7 @@ PivotalTracker.autoload :AccountMembership,          'pivotal-tracker/account_me
 PivotalTracker.autoload :AccountMembership,          'pivotal-tracker/account_membership'
 PivotalTracker.autoload :ApiService,                 'pivotal-tracker/api_service'
 PivotalTracker.autoload :Client,                     'pivotal-tracker/client'
+PivotalTracker.autoload :CycleTimeDetails,           'pivotal-tracker/cycle_time_details'
 PivotalTracker.autoload :ExternalStory,              'pivotal-tracker/external_story'
 PivotalTracker.autoload :FileAttachment,             'pivotal-tracker/file_attachment'
 PivotalTracker.autoload :Follower,                   'pivotal-tracker/follower'
