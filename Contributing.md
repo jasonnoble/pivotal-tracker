@@ -28,6 +28,11 @@ PIVOTAL_PROJECT_ID='9_YOUR_PROJECT_ID_2'
 ```
 
 4. Make sure your `.env` file is added to your [global gitignore file](https://help.github.com/articles/ignoring-files/#create-a-global-gitignore)
+```
+touch ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
+echo .env >> ~/.gitignore_global
+```
 
 
 ### To find your PIVOTAL_TOKEN_ID:
